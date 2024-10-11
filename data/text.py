@@ -3,7 +3,7 @@ english : dict[str, str] = {
     "Other-Lang" : "fr",
     "Other-Lang-Version" : "Français",
     "Current-Lang" : "en",
-    "Other-Lang-Version" : "English",
+    "Current-Lang-Version" : "English",
     "About" : """
         Hi! I'm Nathan Rissot, a 3rd year CS student @ <a href="https://www.univ-orleans.fr/en/sciences-techniques">Orleans University</a>. 
         I'm currently looking for an internship to gain professional experience and hone my technical skills through real-world 
@@ -83,7 +83,7 @@ french : dict[str, str] = {
     "Other-Lang" : "en",
     "Other-Lang-Version" : "English",
     "Current-Lang" : "fr",
-    "Other-Lang-Version" : "Français",
+    "Current-Lang-Version" : "Français",
 
     "About" : """
         Bonjour! Je suis Nathan Rissot, un étudiant en Informatique de L3 à <a href="https://www.univ-orleans.fr/fr/sciences-techniques">l'Université d'Orléans</a>. 
