@@ -1,4 +1,4 @@
-from data.text import english, french, langs
+from data.text import langs
 from pathlib import Path
 import time
 
