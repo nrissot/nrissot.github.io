@@ -3,23 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+    <style id="palette">
+        /* DO NOT DELETE, USED FOR THEME SWITCHER */
+    </style>
+
     <link rel="stylesheet" href="style.css">
+
     <title>404 Not Found</title>
 </head>
 <body>
-    <h1>
-        ERROR 404 : File not found
-    </h1>
-    <pre>
-        ____ ___  ____
-        / / // _ \/ / /
-       /_  _/ // /_  _/
-        /_/ \___/ /_/  
-                       
-    </pre>
-    <p>
-        The site configured at this address does not contain the requested file.
-    </p>
+    <header id="header">
+        <h1><a href="index.html">Nathan Rissot</a></h1>
+        <nav>
+            <button id="theme-switcher" class="theme-switcher" onclick="handle_theme_switcher()">Switch-Theme</button>
+            <a href="blog.html">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <h2>
+            ERROR 404 : File not found
+        </h2>
+        <pre>
+                                    ____ ___  ____
+                                    / / // _ \/ / /
+                                    /_  _/ // /_  _/
+                                    /_/ \___/ /_/  
+                                                    
+        </pre>
+        <p>
+            The site configured at this address does not contain the requested file.
+        </p>
+    </main>
+    <script>
+        const dark_theme = ':root {--background:#000;--medium-bg:#222;--medium:#777;--medium-text:#ddd;--text:#fff;--accent-color: #f5de2f;}'
+        const light_theme  = ':root {--background:#fff;--medium-bg:#ddd;--medium:#777;--medium-text:#222;--text:#000;--accent-color: #eb6a00;}'
+        
+        let is_dark = false
 
+        function set_theme() {
+            if (is_dark) {
+                document.getElementById("palette").textContent = dark_theme;
+            } else {
+                document.getElementById("palette").textContent = light_theme;
+            }
+        }
+
+        function handle_theme_switcher() {
+            is_dark = !is_dark
+            save_theme((is_dark ? "dark" : "light"))
+            set_theme()
+        }
+
+        function save_theme(theme) {
+            localStorage.setItem('theme',theme);
+            console.log( localStorage.getItem('theme') )
+        }
+
+
+        if ( localStorage.getItem('theme') == "dark") {
+            is_dark = true;
+        } else if ( localStorage.getItem('theme') == "light") {
+            is_dark = false;
+        } else {
+            if ( window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                is_dark = true;
+            } else {
+                is_dark = false;
+            }
+        }
+        set_theme()
+    </script>
 </body>
 </html>

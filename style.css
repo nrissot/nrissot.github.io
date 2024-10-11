@@ -58,6 +58,11 @@ a:hover {
     text-decoration: underline;
 }
 
+h1 a {
+    color: var(--text);
+    text-decoration: none;
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -65,7 +70,7 @@ nav {
 }
 
 a:before { content: "↪ ";}
-p a:before, li a:before { content: "";}
+p a:before, li a:before, h1 a::before { content: "";}
 #top::before { content: "↑ ";}
 
 table {
@@ -113,4 +118,8 @@ li {
 
 li::before {
     content:"→ ";
+}
+
+pre {
+    font-family: var(--font-family);
 }
