@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <script>
+        if (navigator.language == "fr-FR") {
+            window.location.replace("fr/index.html")
+        } else {
+            window.location.replace("en/index.html")
+        }
+        </script>
+        <p>
+            If you see this, you might have disabled JavaScript on your web browser, please click on this link to 
+            access the site for your preferred language :
+        </p>
+        <ul>
+            <li>
+                English : <a href="en/index.html">en/index.html</a>
+            </li>
+            <li>
+                Français : <a href="fr/index.html">fr/index.html</a>
+            </li>
+        </ul>
+</body>
+</html>

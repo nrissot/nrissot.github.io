@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:) Nathan Rissot</title>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <style id="palette">
+        /* DO NOT DELETE, USED FOR THEME SWITCHER */
+    </style>
+    
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Nathan Rissot</h1>
+        <nav>
+            <button id="theme-switcher" class="theme-switcher" onclick="handle_theme_switcher()">Switch Theme</button>
+            <a href="../fr/index.html">Français</a>
+            <a href="blog.html">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section id="about">
+            <nav>
+                <a href="https://github.com/Kaawan-d20">Github</a>
+                <a href="mailto:nathan.rissot@gmail.com?subject=Contact from Website" title="nathan.rissot@gmail.com">Mail</a>
+            </nav>
+            <p>
+                
+        Hi! I'm Nathan Rissot, a 3rd year CS student @ <a href="https://www.univ-orleans.fr/en/sciences-techniques">Orleans University</a>. 
+        I'm currently looking for an internship to gain professional experience and hone my technical skills through real-world 
+        problem solving.
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Confident</th>
+                        <th>Comfortable</th>
+                        <th>Learning / Basic level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Python</td>
+                        <td>OCaml</td>
+                        <td>C/C++</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>PhP</td>
+                        <td>JS</td>
+                    </tr>
+                    <tr>
+                        <td>HTML/CSS</td>
+                        <td>Bash</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="projects">
+            <p>
+                Some projects i've worked on :
+            </p>
+            <article>
+                <header>
+                    <h2>EDT Bot:</h2>
+                    <p>
+                        Summer 2024 ~ Personal Project ~ Python, .ics files parsing
+                    </p>
+                </header>
+                <nav>
+                    <a href="https://github.com/TrainWreckOrg/trainwreck">Github repository</a>
+                    <a href="#">Blog article</a>
+                </nav>
+                
+        <p>
+            EDT Bot (<span title="also known as">a.k.a.</span> trainwreck.py) is a Discord Bot designed
+            to provide 3rd year CS students an easier way to access their schedule.
+        </p>
+        <p>
+            This was a summer-long project built and maintained in tandem by 
+            <a href="https://github.com/danydudiot">Dany Dudiot</a> and me.
+        </p>
+        <p>
+            We used Python w/ the <a href="https://interactions-py.github.io/interactions.py/">Interactions.py</a> library to interact
+            with Discord's API, and parsed the .ics files provided by the university to extract, re-format, and filter data based on 
+            the user's actual group.
+        </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Simple Games CLI App (Nim, Connect 4)</h2>
+                    <p>
+                        Spring 2024 ~ Uni Project (19/20) ~ Java, Object Oriented Conception
+                    </p>
+                </header>
+                <nav>
+                    <a href="https://github.com/Kaawan-d20/CDA">Fork of the Github repository</a>
+                    <a href="#">Blog article</a>
+                </nav>
+                
+        <p>
+            During this assignement, we developed a CLI application in Java following an incremental development principle,
+            where each week we had to iterate on what we built based on weekly review, mimicking the SCRUM's sprint system. 
+        </p>
+        <p>
+            While the subject matter was not overly complicated (we only had to code simple games), the constantly evolving criteria
+            made it capital to always think forward, as only minimal alteration on what was built previously was allowed, as the objective
+            of the assignement was to make us plan out instead of jumping straight into our VSCode to program as quickly as possible.
+        </p>
+        <p>
+            A concrete example was the way we managed board states and plays in Connect 4, which was a logical choice in Iterations 2 
+            when we only had to implement the game to be played by two humans sitting in front of the computer, but became quite an 
+            obstacle in Iteration 4 when we had to implement several computer strategies.
+        </p>
+        <p>
+            We learned a lot about iterative development and proper Object-Oriented-Conception, as the choice we made the
+            very first week conditioned what we did until the end of the project.
+        </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Mock-Agency management website</h2>
+                    <p>
+                        Winter 2023 ~ Uni Project (20/20) ~ HTML/CSS, PhP, SQL, JS
+                    </p>
+                </header>
+                <nav>
+                    <a href="https://github.com/Kaawan-d20/Sprint">Fork of the Github repository</a>
+                    <a href="#">Blog article</a>
+                </nav>
+                
+        <p>
+            During this assignment, we (<a href="https://github.com/danydudiot">Dany Dudiot</a>, 
+            <a href="https://github.com/Tenebiscotta">Agathe Papineau</a> and me) had around a month to develop the website of a 
+            mock bank agency following the MVC Design Pattern. The aim of the website was to provide a way for the agency's workers
+            to schedule meetings between themselves or with clients, to quickly access client data, and to allow the director to have
+            a complete overview of their agency functionnement.
+        </p>
+        <p>
+            My primary task was the CSS and HTML for the site, but we all did a bit of everythin: SQL requests, Vanilla 
+            PhP server-side development, a bit of JS for password salting before hashing, but also database schematic drafting and 
+            conceptual/technical designing work.
+        </p>
+        <p>
+            This was our first group project, so we also had to learn how to work together, use git and github, solve merge conflicts etc...
+        </p>
+            </article>
+        </section>
+        <hr>
+        <section id="contact">
+            <h2>You can reach me through :</h2>
+            <ul>
+                <li>
+                    my Professionnal email adress <a href="mailto:nathan.rissot@gmail.com?subject=Contact from Website" id="mailPerso">nathan.rissot@gmail.com</a>
+                </li>
+                <li>
+                    my Academic email adress <a href="mailto:nathan.rissot@etu.univ-orleans.fr?subject=Contact from Website" id="mailAcademic">nathan.rissot@etu.univ-orleans.fr</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <a href="#header" id="top">Top</a>
+        </nav>
+    </footer>
+</body>
+<script>
+    const dark_theme = ':root {--background:#000;--medium-bg:#222;--medium:#777;--medium-text:#ddd;--text:#fff;--accent-color: #f5de2f;}'
+    const light_theme  = ':root {--background:#fff;--medium-bg:#ddd;--medium:#777;--medium-text:#222;--text:#000;--accent-color: #eb6a00;}'
+    
+    let is_dark = false
+
+    function set_theme() {
+        if (is_dark) {
+            document.getElementById("palette").textContent = dark_theme;
+        } else {
+            document.getElementById("palette").textContent = light_theme;
+        }
+    }
+
+    function handle_theme_switcher() {
+        is_dark = !is_dark
+        save_theme((is_dark ? "dark" : "light"))
+        set_theme()
+    }
+
+    function save_theme(theme) {
+        localStorage.setItem('theme',theme);
+        console.log( localStorage.getItem('theme') )
+    }
+
+
+    if ( localStorage.getItem('theme') == "dark") {
+        is_dark = true;
+    } else if ( localStorage.getItem('theme') == "light") {
+        is_dark = false;
+    } else {
+        if ( window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            is_dark = true;
+        } else {
+            is_dark = false;
+        }
+    }
+    set_theme()
+</script>
+</html><!-- last generated at: 2024/10/d 11:11:57 -->

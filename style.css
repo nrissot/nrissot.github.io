@@ -1,0 +1,114 @@
+:root {
+    --font-family : "JetBrains Mono", Consolas, monospace;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+
+    font-family: var(--font-family);
+    font-weight: 400;
+
+    max-width: min(round(nearest, 80ch, 5px), 90dvw);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+footer {
+    justify-content: end;
+}
+
+header p {
+    color: var(--medium-text);
+    font-style: italic;
+}
+
+hr {
+    border: solid 1px var(--text);
+}
+
+h1, h2, h3 { 
+    margin: 0;
+    font-weight: 600;
+}
+
+h1:hover::before, h2:hover::before, h3:hover::before { color: var(--medium);}
+h1::before, h2::before,h3::before { color: var(--medium-bg);}
+
+h1::before { content: "# ";}
+h2::before { content: "## ";}
+h3::before { content: "### ";}
+
+a {
+    color: var(--accent-color);
+    text-decoration: underline dashed;
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2ch;
+}
+
+a:before { content: "↪ ";}
+p a:before, li a:before { content: "";}
+#top::before { content: "↑ ";}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    font-weight: 700;
+    color: var(--background);
+    background-color: var(--text);
+}
+
+th, td {
+    width: 33%;
+    padding: 1ch;
+    border-collapse: collapse;
+    border: 2px solid var(--text);
+}
+
+article, section {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    scroll-snap-align: start;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color : var(--accent-color);
+    text-decoration: underline dashed;
+    font-family: var(--font-family);
+    padding: 0;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style:none;
+}
+
+li::before {
+    content:"→ ";
+}
