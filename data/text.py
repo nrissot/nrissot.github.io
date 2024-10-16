@@ -95,7 +95,7 @@ french : dict[str, str] = {
 
     "Blog-Article" : "Article de Blog",
     "Github-Fork" : "Fork du dépot Github",
-    "Github-Repo" : "Dépot Github",
+    "Github-Repo" : "Dépôt Github",
 
     "Project-Intro" : "Quelques projets sur lesquels j'ai travaillé :",
     "EDT-Bot-Details" :  "Été 2024 ~ Projet Personnel ~ Python, parsing de fichier .ics",
