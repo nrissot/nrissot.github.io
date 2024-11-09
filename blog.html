@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:) Nathan Rissot</title>
+
+    <style id="palette">
+        /* DO NOT DELETE, USED FOR THEME SWITCHER */
+    </style>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header"> <!-- for the footer 'top' button -->
+        <h1><a href="fr/index.html">Nathan Rissot</a></h1>
+        <nav>
+            <button id="theme-switcher" class="theme-switcher" onclick="handle_theme_switcher()">Changer le theme</button>
+            <a href="fr/index.html">Accueil</a>
+            <a href="fr/index.html#contact">Contact</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <!-- TODO : Search box -->
+        <h2>Articles</h2>
+        <article>
+                <header>
+                    <h3 class="no-hash"><a href="blog/EDT-Bot.html">EDT Bot</a></h3>
+                    <span>08/11/2024, Français, ≈13min</span>
+                </header>
+                <p class="details">Été 2024 ~ Projet Personnel ~ Python, parsing de fichier .ics</p>
+                <p>
+                    EDT Bot (<span title="also known as">a.k.a.</span> trainwreck.py) est un Bot discord créé en binome avec <a href="https://danydudiot.github.io/">Dany Dudiot</a> pour donner un accès facilité aux étudiants de L3 Info à leur emploi du temps
+                </p>
+            </article>
+
+    </main>
+    <footer>
+        <nav>
+            <a href="#header" id="top">Top</a>
+        </nav>
+    </footer>
+</body>
+<script>
+    const dark_theme = ':root {--background:#000;--medium-bg:#222;--medium:#777;--medium-text:#ddd;--text:#fff;--accent-color: #f5de2f;--code-blue:#38bdf8;--code-green:#65a30d;--code-rust:#f59e0b;--code-yellow:#facc15;}'
+    const light_theme  = ':root {--background:#fff;--medium-bg:#eee;--medium:#777;--medium-text:#222;--text:#000;--accent-color: #eab308;--code-blue:#0369a1;--code-green:#4d7c0f;--code-rust:#c2410c;--code-yellow:#eab308;}'
+    
+    let is_dark = false
+
+    function set_theme() {
+        if (is_dark) {
+            document.getElementById("palette").textContent = dark_theme;
+        } else {
+            document.getElementById("palette").textContent = light_theme;
+        }
+    }
+
+    function handle_theme_switcher() {
+        is_dark = !is_dark
+        save_theme((is_dark ? "dark" : "light"))
+        set_theme()
+    }
+
+    function save_theme(theme) {
+        localStorage.setItem('theme',theme);
+        console.log( localStorage.getItem('theme') )
+    }
+
+
+    if ( localStorage.getItem('theme') == "dark") {
+        is_dark = true;
+    } else if ( localStorage.getItem('theme') == "light") {
+        is_dark = false;
+    } else {
+        if ( window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            is_dark = true;
+        } else {
+            is_dark = false;
+        }
+    }
+    set_theme()
+</script>
+</html>

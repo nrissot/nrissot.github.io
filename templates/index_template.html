@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="%Current-Lang%">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header id="header">
+    <header id="header"> <!-- for the footer 'top' button -->
         <h1><a href="../%Current-Lang%/index.html">Nathan Rissot</a></h1>
         <nav>
             <button id="theme-switcher" class="theme-switcher" onclick="handle_theme_switcher()">%Switch-Theme%</button>
             <a href="../%Other-Lang%/index.html">%Other-Lang-Version%</a>
-            <a href="blog.html">Blog</a>
+            <a href="../blog.html">Blog</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -65,20 +65,20 @@
             <article>
                 <header>
                     <h2>EDT Bot:</h2>
-                    <p>
+                    <p class="details">
                         %EDT-Bot-Details%
                     </p>
                 </header>
                 <nav>
                     <a href="https://github.com/TrainWreckOrg/trainwreck">%Github-Repo%</a>
-                    <a href="#">%Blog-Article%</a>
+                    <a href="../blog/EDT-Bot.html">%Blog-Article%</a>
                 </nav>
                 %EDT-Bot-Description%
             </article>
             <article>
                 <header>
                     <h2>%CDA-Title%</h2>
-                    <p>
+                    <p class="details">
                         %CDA-Details%
                     </p>
                 </header>
@@ -91,7 +91,7 @@
             <article>
                 <header>
                     <h2>%Sprint-Title%</h2>
-                    <p>
+                    <p class="details">
                         %Sprint-Details%
                     </p>
                 </header>
@@ -121,43 +121,5 @@
         </nav>
     </footer>
 </body>
-<script>
-    const dark_theme = ':root {--background:#000;--medium-bg:#222;--medium:#777;--medium-text:#ddd;--text:#fff;--accent-color: #f5de2f;}'
-    const light_theme  = ':root {--background:#fff;--medium-bg:#ddd;--medium:#777;--medium-text:#222;--text:#000;--accent-color: #eb6a00;}'
-    
-    let is_dark = false
-
-    function set_theme() {
-        if (is_dark) {
-            document.getElementById("palette").textContent = dark_theme;
-        } else {
-            document.getElementById("palette").textContent = light_theme;
-        }
-    }
-
-    function handle_theme_switcher() {
-        is_dark = !is_dark
-        save_theme((is_dark ? "dark" : "light"))
-        set_theme()
-    }
-
-    function save_theme(theme) {
-        localStorage.setItem('theme',theme);
-        console.log( localStorage.getItem('theme') )
-    }
-
-
-    if ( localStorage.getItem('theme') == "dark") {
-        is_dark = true;
-    } else if ( localStorage.getItem('theme') == "light") {
-        is_dark = false;
-    } else {
-        if ( window.matchMedia("(prefers-color-scheme: dark)").matches) {
-            is_dark = true;
-        } else {
-            is_dark = false;
-        }
-    }
-    set_theme()
-</script>
+%Script%
 </html>

@@ -26,7 +26,7 @@ footer {
     justify-content: end;
 }
 
-header p {
+.details {
     color: var(--medium-text);
     font-style: italic;
 }
@@ -40,12 +40,12 @@ h1, h2, h3 {
     font-weight: 600;
 }
 
-h1:hover::before, h2:hover::before, h3:hover::before { color: var(--medium);}
-h1::before, h2::before,h3::before { color: var(--medium-bg);}
+h1:not(.no-hash):hover::before, h2:not(.no-hash):hover::before, h3:not(.no-hash):hover::before { color: var(--medium);}
+h1:not(.no-hash)::before, h2:not(.no-hash)::before,h3:not(.no-hash)::before { color: var(--medium-bg);}
 
-h1::before { content: "# ";}
-h2::before { content: "## ";}
-h3::before { content: "### ";}
+h1:not(.no-hash)::before { content: "# ";}
+h2:not(.no-hash)::before { content: "## ";}
+h3:not(.no-hash)::before { content: "### ";}
 
 a {
     color: var(--accent-color);
@@ -72,6 +72,14 @@ a:before { content: "↪ ";}
 p a:before, li a:before, h1 a::before { content: "";}
 #top::before { content: "↑ ";}
 
+.indent {
+    text-indent: 2ch;
+}
+
+.indent>code {
+    text-indent: 0;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -97,6 +105,22 @@ article, section {
     scroll-snap-align: start;
 }
 
+figure {
+    margin: 0;
+}
+
+.illustration {
+    margin: auto;
+    margin-bottom: 2em;
+    width: fit-content;
+}
+
+.illustration img {
+    object-fit: cover;
+    display: block;
+    max-width: 100%;
+}
+
 button {
     background-color: transparent;
     border: none;
@@ -111,14 +135,72 @@ button:hover {
     text-decoration: underline;
 }
 
-li {
+ul>li {
     list-style:none;
 }
 
-li::before {
+ul>li::before {
     content:"→ ";
 }
 
-pre {
-    font-family: var(--font-family);
+ol>li {
+    padding-bottom: .5em;
 }
+
+blockquote, .remarque {
+    display: block;
+    border-left: 2px solid var(--medium-text);
+    margin: 1em;
+    padding-left: 1em;
+}
+
+q::before, q::after {
+    content: "";
+}
+
+q, q>a {
+    color: var(--medium-text);
+    font-style: italic;
+}
+
+code {
+    display: inline-block;
+    font-family: var(--font-family);
+    color: var(--text);
+    background-color: var(--medium-bg);
+}
+
+.code-bash::before {
+    content: "$ ";
+}
+
+.figure-code {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--medium-bg);
+    border-radius: 5px;
+    width: calc(100% - 2em);
+    padding: 1em;
+    margin-bottom: 2em;
+    overflow-x:auto;
+    scrollbar-color: var(--medium) var(--medium-bg);
+    scrollbar-width: thin;
+}
+
+.figure-code>figcaption {
+    align-self: start;
+    place-self: end;
+    position: absolute;
+}
+pre {
+    margin: 0;
+}
+pre code {
+    display: block;
+    color: var(--text);
+}
+
+.code-function {color: var(--code-blue);}
+.code-comment {color: var(--code-green);}
+.code-string {color: var(--code-rust);}
+.code-symbol {color: var(--code-yellow);}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header id="header">
+    <header id="header"> <!-- for the footer 'top' button -->
         <h1><a href="../fr/index.html">Nathan Rissot</a></h1>
         <nav>
             <button id="theme-switcher" class="theme-switcher" onclick="handle_theme_switcher()">Changer le theme</button>
             <a href="../en/index.html">English</a>
-            <a href="blog.html">Blog</a>
+            <a href="../blog.html">Blog</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -68,13 +68,13 @@
             <article>
                 <header>
                     <h2>EDT Bot:</h2>
-                    <p>
+                    <p class="details">
                         Été 2024 ~ Projet Personnel ~ Python, parsing de fichier .ics
                     </p>
                 </header>
                 <nav>
                     <a href="https://github.com/TrainWreckOrg/trainwreck">Dépôt Github</a>
-                    <a href="#">Article de Blog</a>
+                    <a href="../blog/EDT-Bot.html">Article de Blog</a>
                 </nav>
                 
         <p>
@@ -94,7 +94,7 @@
             <article>
                 <header>
                     <h2>Jeux Simple en CLI (Nim, Puissance 4)</h2>
-                    <p>
+                    <p class="details">
                         Printemps 2024 ~ Project de Fac (19/20) ~ Java, Conception Orienté Objet
                     </p>
                 </header>
@@ -127,7 +127,7 @@
             <article>
                 <header>
                     <h2>Site-Web de gestion d'une Agence Fictive</h2>
-                    <p>
+                    <p class="details">
                         Hiver 2023 ~ Projet de Fac (20/20) ~ HTML/CSS, PhP, SQL, JS
                     </p>
                 </header>
@@ -174,8 +174,8 @@
     </footer>
 </body>
 <script>
-    const dark_theme = ':root {--background:#000;--medium-bg:#222;--medium:#777;--medium-text:#ddd;--text:#fff;--accent-color: #f5de2f;}'
-    const light_theme  = ':root {--background:#fff;--medium-bg:#ddd;--medium:#777;--medium-text:#222;--text:#000;--accent-color: #eb6a00;}'
+    const dark_theme = ':root {--background:#000;--medium-bg:#222;--medium:#777;--medium-text:#ddd;--text:#fff;--accent-color: #f5de2f;--code-blue:#38bdf8;--code-green:#65a30d;--code-rust:#f59e0b;--code-yellow:#facc15;}'
+    const light_theme  = ':root {--background:#fff;--medium-bg:#eee;--medium:#777;--medium-text:#222;--text:#000;--accent-color: #eab308;--code-blue:#0369a1;--code-green:#4d7c0f;--code-rust:#c2410c;--code-yellow:#eab308;}'
     
     let is_dark = false
 
@@ -212,4 +212,4 @@
     }
     set_theme()
 </script>
-</html><!-- last generated at: 2024/10/d 09:39:18 -->
+</html><!-- last generated at: 2024/11/d 19:15:22 -->

@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header id="header">
+    <header id="header"> <!-- for the footer 'top' button -->
         <h1><a href="../en/index.html">Nathan Rissot</a></h1>
         <nav>
             <button id="theme-switcher" class="theme-switcher" onclick="handle_theme_switcher()">Switch Theme</button>
             <a href="../fr/index.html">Français</a>
-            <a href="blog.html">Blog</a>
+            <a href="../blog.html">Blog</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -68,13 +68,13 @@
             <article>
                 <header>
                     <h2>EDT Bot:</h2>
-                    <p>
+                    <p class="details">
                         Summer 2024 ~ Personal Project ~ Python, .ics files parsing
                     </p>
                 </header>
                 <nav>
                     <a href="https://github.com/TrainWreckOrg/trainwreck">Github repository</a>
-                    <a href="#">Blog article</a>
+                    <a href="../blog/EDT-Bot.html">Blog article</a>
                 </nav>
                 
         <p>
@@ -94,7 +94,7 @@
             <article>
                 <header>
                     <h2>Simple Games CLI App (Nim, Connect 4)</h2>
-                    <p>
+                    <p class="details">
                         Spring 2024 ~ Uni Project (19/20) ~ Java, Object Oriented Conception
                     </p>
                 </header>
@@ -125,7 +125,7 @@
             <article>
                 <header>
                     <h2>Mock-Agency management website</h2>
-                    <p>
+                    <p class="details">
                         Winter 2023 ~ Uni Project (20/20) ~ HTML/CSS, PhP, SQL, JS
                     </p>
                 </header>
@@ -171,8 +171,8 @@
     </footer>
 </body>
 <script>
-    const dark_theme = ':root {--background:#000;--medium-bg:#222;--medium:#777;--medium-text:#ddd;--text:#fff;--accent-color: #f5de2f;}'
-    const light_theme  = ':root {--background:#fff;--medium-bg:#ddd;--medium:#777;--medium-text:#222;--text:#000;--accent-color: #eb6a00;}'
+    const dark_theme = ':root {--background:#000;--medium-bg:#222;--medium:#777;--medium-text:#ddd;--text:#fff;--accent-color: #f5de2f;--code-blue:#38bdf8;--code-green:#65a30d;--code-rust:#f59e0b;--code-yellow:#facc15;}'
+    const light_theme  = ':root {--background:#fff;--medium-bg:#eee;--medium:#777;--medium-text:#222;--text:#000;--accent-color: #eab308;--code-blue:#0369a1;--code-green:#4d7c0f;--code-rust:#c2410c;--code-yellow:#eab308;}'
     
     let is_dark = false
 
@@ -209,4 +209,4 @@
     }
     set_theme()
 </script>
-</html><!-- last generated at: 2024/10/d 09:39:18 -->
+</html><!-- last generated at: 2024/11/d 19:15:22 -->
