@@ -16,7 +16,7 @@ def main():
         for keyword in lang[1].keys():
             content = content.replace(f"%{keyword}%", lang[1][keyword])
         content = content.replace("%Script%", script)
-        content += f"<!-- last generated at: {time.strftime("%Y/%m/d %H:%M:%S")} -->"
+        content += f"<!-- last generated at: {time.strftime("%Y/%m/d%H:%M:%S")}-->"
         with open(f"{lang[0]}/index.html", "w", encoding="utf-8") as target:
             print(content,file=target)
             print(f"generated {lang[0]}/index.html at: {time.strftime("%Y/%m/d %H:%M:%S")}")
