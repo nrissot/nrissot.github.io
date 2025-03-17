@@ -87,6 +87,7 @@ table {
 
 th {
     text-align: left;
+    vertical-align: bottom;
     font-weight: 700;
     color: var(--background);
     background-color: var(--text);

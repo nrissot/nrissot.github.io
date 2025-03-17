@@ -91,7 +91,7 @@ french : dict[str, str] = {
         professionnel""",
     "Level-High" : "Confiant",
     "Level-Medium" : "Comfortable",
-    "Level-Basic" : "En train d'apprendre",
+    "Level-Basic" : "En train d'apprendre / Niveau basique",
 
     "Blog-Article" : "Article de Blog",
     "Github-Fork" : "Fork du dépot Github",
