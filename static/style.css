@@ -15,6 +15,7 @@
 
     background-color: var(--color-bg);
     color: var(--color-text);
+    color-scheme: dark;
 }
 
 body {
@@ -68,4 +69,11 @@ nav {
     width:1px;
     height:1px;
     overflow:hidden;
+}
+@media print{
+    :root {
+    --color-accent: #000;
+    --color-text  : #000;
+    --color-bg    : #fff;
+    }
 }
