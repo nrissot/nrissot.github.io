@@ -88,14 +88,19 @@ nav {
     position: fixed;
     right: 2em;
     bottom: 0;
+    color: var(--color-gray);
 }
 
 input[type="radio"].custom-radio {
     display: none;
 }
 
-input[type="radio"].custom-radio + label::before {
-    content: "( ) ";
+input[type="radio"].custom-radio + label {
+    cursor: pointer;
+
+    &::before {
+        content: "( ) ";
+    }
 }
 
 input[type="radio"].custom-radio:checked + label::before {
