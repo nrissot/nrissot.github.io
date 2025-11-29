@@ -1,11 +1,11 @@
 @font-face {
     font-family: "JetBrains mono";
-    src: url(assets/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf);
+    src: url(/static/assets/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: "JetBrains mono italics";
-    src: url(assets/fonts/JetBrains_Mono/JetBrainsMono-Italic-VariableFont_wght.ttf);
+    src: url(/static/assets/fonts/JetBrains_Mono/JetBrainsMono-Italic-VariableFont_wght.ttf);
 }
 
 :root {
