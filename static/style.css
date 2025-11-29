@@ -9,13 +9,15 @@
 }
 
 :root {
-    --color-accent: #f5de2f;
-    --color-text  : #fff;
-    --color-bg    : #000;
+    color-scheme: light dark;
+
+    --color-accent: light-dark(#09814d, #f5de2f) ;
+    --color-text  : light-dark(#000, #fff);
+    --color-gray  : light-dark(#444, #aaa);
+    --color-bg    : light-dark(#fff, #000);
 
     background-color: var(--color-bg);
     color: var(--color-text);
-    color-scheme: dark;
 }
 
 body {
@@ -52,6 +54,15 @@ b, h1 {
     }
 }
 
+footer, .gray {
+    color: var(--color-gray);
+
+    & a {
+        text-decoration: none;
+        color: var(--color-gray);
+    }
+}
+
 i {
     font-family: "JetBrains mono italics";
     font-style: normal;
@@ -75,5 +86,21 @@ nav {
     --color-accent: #000;
     --color-text  : #000;
     --color-bg    : #fff;
+    }
+}
+/* Mobile size */
+@media (max-width:700px) {
+    :root {
+        font-size: .75em;
+    }
+
+    body {
+        margin: auto
+    }
+}
+
+@media (max-width:500px) {
+    :root {
+        font-size: .5em;
     }
 }
