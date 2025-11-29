@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "JetBrains mono";
+    src: url(assets/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "JetBrains mono italics";
+    src: url(assets/fonts/JetBrains_Mono/JetBrainsMono-Italic-VariableFont_wght.ttf);
+}
+
+:root {
+    --color-accent: #f5de2f;
+    --color-text  : #fff;
+    --color-bg    : #000;
+
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    color-scheme: dark;
+}
+
+body {
+    width: fit-content;
+    margin: auto;
+}
+
+pre {
+    font-family: "JetBrains mono";
+    font-variant-ligatures:common-ligatures;
+    font-weight: 400;
+
+    & h1, h2, h3, h4, h5, h6, p, header, footer, li, ul {
+        display: inline;
+        font-size: 1em;
+        margin: 0;
+        padding: 0;
+    }
+
+    & ul {
+        list-style: none;
+    }
+}
+
+a {
+    color: var(--color-accent);
+}
+
+b, h1 {
+    font-weight: 900;
+
+    & a {
+        text-decoration: none;
+    }
+}
+
+i {
+    font-family: "JetBrains mono italics";
+    font-style: normal;
+}
+
+nav {
+    display: inline;
+}
+
+/* snippet from https://webaim.org/techniques/css/invisiblecontent/ */
+.screen-reader-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+@media print{
+    :root {
+    --color-accent: #000;
+    --color-text  : #000;
+    --color-bg    : #fff;
+    }
+}

@@ -1,0 +1,38 @@
+Nathan Rissot                                    Github  Blog  Contact
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+
+Bonjour! Je suis Nathan Rissot, un étudiant de M1 dans le parcours 
+Informatique GPEx à l'Université d'Orléans. Je suis passionné par la 
+recherche académique, notamment dans le domaine des graphes, de la
+parallèlisation ou de la compilation.
+
+Dans mon temps libre, j'aime jouer à D&D avec mes amis, pratiquer les
+AMHE, ou programmer en go.
+
+  +-------------------+-------------+--------------------------+
+  | Languages Favoris | Confiant    | Utilisé pour des projets |
+  +-------------------+-------------+--------------------------+
+  | Go                | C           | Rocq                     |
+  | Python            | C++         | Prolog                   |
+  | Java              | HTML/CSS/JS | OCaml                    |
+  +-------------------+-------------+--------------------------+
+
+Ce semestre je suis les cours "Programmation Parallèle", "Intelligence
+Artificielle", "Description Formelle des Languages" & "Graphes, 
+Algorithmes et Modèles de Calculs" dans le cadre du Master ARIAS.
+
+Avec le dispositif GPEx j'assiste également à des cours de sciences 
+qui ne sont pas des cours d'Informatique: "Hydrogéologie" à l'OSUC et
+de "Development Economics" en DEG, mais aussi au module "Défi AAP - 
+Construire et défendre un projet de recherche".
+
+Enfin, je participe au projet M-DiLL avec une équipe du labo LPC2E sur
+le sujet "Analyse de données de turbulence atmosphérique au-dessus de
+la tourbière de la Guette".
+
+----------------------------------------------------------------------
+Vous pouvez me contacter via:
+ -> Mon adresse mail académique:  nathan.rissot@etu.univ-orleans.fr
+ -> Mon adresse mail personnelle: nathan.rissot@gmail.com
+
+Copyright (c) 2025 Nathan Rissot

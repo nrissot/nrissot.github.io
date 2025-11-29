@@ -1,84 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
-
-    <style id="palette">
-        /* DO NOT DELETE, USED FOR THEME SWITCHER */
-    </style>
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../style.css">
-
-    <title>404 Not Found</title>
+    <title>Nathan Rissot [404]</title>
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-    <header id="header">
-        <h1><a href="index.html">Nathan Rissot</a></h1>
-        <nav>
-            <button id="theme-switcher" class="theme-switcher" onclick="handle_theme_switcher()">Switch-Theme</button>
-        </nav>
-    </header>
-    <hr>
-    <main>
-        <h2>
-            ERROR 404 : File not found
-        </h2>
-        <pre style="display: block;margin: auto;">
-                             _  _    ___  _  _   
-                            | || |  / _ \| || |  
-                            | || |_| | | | || |_ 
-                            |__   _| |_| |__   _|
-                               |_|  \___/   |_|  
-                                                 
-        </pre>
-        <p>
-            The site configured at this address does not contain the requested file.
-        </p>
-    </main>
-    <script>
-        const dark_theme = ':root {--background:#000;--medium-bg:#222;--medium:#777;--medium-text:#ddd;--text:#fff;--accent-color: #f5de2f;}'
-        const light_theme  = ':root {--background:#fff;--medium-bg:#ddd;--medium:#777;--medium-text:#222;--text:#000;--accent-color: #eb6a00;}'
-        
-        let is_dark = false
+<pre><header><h1><a href="index.html">Nathan Rissot</a></h1>                                    <a href="https://github.com/nrissot">Github</a>  <nav><a href="blog.html">Blog</a>  <a href="index.html#contact">Contact</a></nav>
+<span aria-hidden="true">::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</span></header> 
+<p aria-hidden="true">
 
-        function set_theme() {
-            if (is_dark) {
-                document.getElementById("palette").textContent = dark_theme;
-            } else {
-                document.getElementById("palette").textContent = light_theme;
-            }
-        }
+            .----.          .-----------.                .----.     
+           /4444/          /0000000000000\              /4444/      
+          /4444/          /0000.-----.0000\            /4444/       
+         /4444/          :0000/       \0000:          /4444/        
+        /4444/           |000|         |000|         /4444/         
+       /4444/            |000|   .-.   |000|        /4444/          
+      /4444/    .---.    |000|   |0|   |000|       /4444/    .---.  
+     /4444/     |444|    |000|   |0|   |000|      /4444/     |444|  
+    /4444'------'444|    |000|   '-'   |000|     /4444'------'444|  
+   '4444444444444444|    |000|         |000|    '4444444444444444|  
+   '------------.444|    :0000\       /0000:    '------------.444|  
+                |444|     \0000'-----'0000/                  |444|  
+                |444|      \0000000000000/                   |444|  
+                '---'       '-----------'                    '---'  
 
-        function handle_theme_switcher() {
-            is_dark = !is_dark
-            save_theme((is_dark ? "dark" : "light"))
-            set_theme()
-        }
+</p><span class="screen-reader-only">404</span>
+<p>La page que vous essayez de consulter n'est pas/plus disponible</p>
+<p>Si vous pensez que c'est une erreur, vous pouvez m'envoyer un mail à 
+<a href="mailto:nathan.rissot@gmail.com?subject=[BUG][WEBSITE_404_BROKEN_LINK]">nathan.rissot@gmail.com</a></p>
 
-        function save_theme(theme) {
-            localStorage.setItem('theme',theme);
-            console.log( localStorage.getItem('theme') )
-        }
-
-
-        if ( localStorage.getItem('theme') == "dark") {
-            is_dark = true;
-        } else if ( localStorage.getItem('theme') == "light") {
-            is_dark = false;
-        } else {
-            if ( window.matchMedia("(prefers-color-scheme: dark)").matches) {
-                is_dark = true;
-            } else {
-                is_dark = false;
-            }
-        }
-        set_theme()
-    </script>
+<footer>Copyright (c) 2025 Nathan Rissot<!-- · Made with &lt3 using <a href="https://pandoc.org/">pandoc--></a></footer></pre>
 </body>
 </html>
