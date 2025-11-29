@@ -9,12 +9,14 @@
 }
 
 :root {
-    color-scheme: light dark;
+    --color-scheme: light dark;
 
-    --color-accent: light-dark(#09814d, #f5de2f) ;
-    --color-text  : light-dark(#000, #fff);
-    --color-gray  : light-dark(#444, #aaa);
-    --color-bg    : light-dark(#fff, #000);
+    color-scheme: var(--color-scheme);
+
+    --color-accent: light-dark(oklch(0.4735 0.111 156.51), oklch(0.8927 0.1761 101.19)) ;
+    --color-text  : light-dark(oklch(0 0 0), oklch(1 0 0));
+    --color-gray  : light-dark(oklch(.4 0 0), oklch(.7 0 0));
+    --color-bg    : light-dark(oklch(1 0 0), oklch(0 0 0));
 
     background-color: var(--color-bg);
     color: var(--color-text);
@@ -81,6 +83,25 @@ nav {
     height:1px;
     overflow:hidden;
 }
+
+.themeswitcher {
+    position: fixed;
+    right: 2em;
+    bottom: 0;
+}
+
+input[type="radio"].custom-radio {
+    display: none;
+}
+
+input[type="radio"].custom-radio + label::before {
+    content: "( ) ";
+}
+
+input[type="radio"].custom-radio:checked + label::before {
+    content: "(x) ";
+}
+
 @media print{
     :root {
     --color-accent: #000;
@@ -89,6 +110,13 @@ nav {
     }
 }
 /* Mobile size */
+@media (max-width:1120px) {
+    .themeswitcher {
+        position: relative;
+        right: inherit;
+        bottom: inherit;
+    }
+}
 @media (max-width:700px) {
     :root {
         font-size: .75em;
