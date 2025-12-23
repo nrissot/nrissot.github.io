@@ -25,6 +25,12 @@
 body {
     width: fit-content;
     margin: auto;
+    font-family: "JetBrains mono";
+    font-variant-ligatures:common-ligatures;
+
+    & h1, h2, h3, h4, h5, h6 {
+        font-size: 1em;
+    }
 }
 
 pre {
@@ -72,6 +78,10 @@ i {
 
 nav {
     display: inline;
+}
+
+.tag {
+    text-decoration: none;
 }
 
 /* snippet from https://webaim.org/techniques/css/invisiblecontent/ */
