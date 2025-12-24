@@ -47,6 +47,13 @@ func (p Page) WriteToFile() error {
 	return err
 }
 
+func (p Page) WriteToFileTxtOnly() error {
+	if p.TXT == "" {
+		p.GenerateTXT()
+	}
+	return os.WriteFile(DST+p.URL+".txt", []byte(p.TXT), 0666)
+}
+
 func (lp ListPage) WriteToFile() error {
 	if lp.HTML == "" {
 		// Sort articles in LWFS order (Last Written, First Shown)

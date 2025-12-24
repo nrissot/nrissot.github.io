@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strings"
 	"time"
 )
 
@@ -80,4 +81,20 @@ func main() {
 		panic(err)
 	}
 
+	// write the sitemap.txt to a file
+	root_pages_names := []string{"index", "blog", "tags", "map"}
+	blog_pages_names := []string{}
+	for _, p := range blog.Articles {
+		blog_pages_names = append(blog_pages_names, strings.TrimPrefix(p.URL, "/blog/"))
+	}
+	tags_pages_names := []string{}
+	for _, p := range tags.Articles {
+		tags_pages_names = append(tags_pages_names, strings.TrimPrefix(p.URL, "/tags/"))
+	}
+	sitemap := CreatePage("Carte du Site", "/map", DrawTree(root_pages_names, blog_pages_names, tags_pages_names), "", time.Now(), nil)
+	err = sitemap.WriteToFileTxtOnly()
+
+	if err != nil {
+		panic(err)
+	}
 }

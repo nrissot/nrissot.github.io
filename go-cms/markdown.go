@@ -39,7 +39,7 @@ func ReadFrontMatter(data []byte) (*FrontMatter, error) {
 		return nil, err
 	}
 	for i := range fmtr.Tags {
-		fmtr.Tags[i] = strings.ReplaceAll(strings.TrimSpace(fmtr.Tags[i]), " ", "-")
+		fmtr.Tags[i] = strings.ToLower(strings.ReplaceAll(strings.TrimSpace(fmtr.Tags[i]), " ", "-"))
 	}
 	return &fmtr, nil
 }
