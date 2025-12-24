@@ -22,7 +22,7 @@ window.onload = function() {
     pre.append(" |\n*------------------*");
 
     container.append(pre);
-    document.querySelector('body>pre').append(container);
+    document.querySelector('body').append(container);
 }
 
 function addCustomRadio(text, id, parent, checked) {
