@@ -35,4 +35,6 @@ Vous pouvez me contacter via:
  -> Mon adresse mail académique:  nathan.rissot@etu.univ-orleans.fr
  -> Mon adresse mail personnelle: nathan.rissot@gmail.com
 
-Copyright (c) 2025 Nathan Rissot
+Copyright (c) 2025 Nathan Rissot · curl this page:
+$ curl https://nrissot.github.io/index.txt
+sitemap: https://nrissot.github.io/map.txt

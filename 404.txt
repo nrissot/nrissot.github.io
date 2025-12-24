@@ -24,4 +24,6 @@ La page que vous essayez de consulter n'est pas/plus disponible
 Si vous pensez que c'est une erreur, vous pouvez m'envoyer un mail à 
 nathan.rissot@gmail.com
 
-Copyright (c) 2025 Nathan Rissot
+Copyright (c) 2025 Nathan Rissot · curl this page:
+$ curl https://nrissot.github.io/404.txt
+sitemap: https://nrissot.github.io/map.txt

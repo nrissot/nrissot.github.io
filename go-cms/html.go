@@ -9,7 +9,8 @@ var header string = `<header><h1><a href="/index.html">Nathan Rissot</a></h1>   
 <span aria-hidden="true" class="gray">::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</span></header>`
 
 var footer string = `<footer>Copyright (c) %d Nathan Rissot · curl this page:
-$ curl <a href="https://nrissot.github.io%s.txt">https://nrissot.github.io%s.txt</a></footer>`
+$ curl <a href="https://nrissot.github.io%s.txt">https://nrissot.github.io%s.txt</a>
+sitemap: <a href="https://nrissot.github.io/map.txt">https://nrissot.github.io/map.txt</a></footer>`
 
 var head string = `<!DOCTYPE html>
 <html lang="fr">

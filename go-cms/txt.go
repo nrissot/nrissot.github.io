@@ -9,7 +9,7 @@ import (
 
 var txt_header string = "Nathan Rissot                                    Github  Blog  Contact\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"
 
-var txt_footer string = "Copyright (c) 2025 Nathan Rissot · curl this page:\n$ curl https://nrissot.github.io%s.txt"
+var txt_footer string = "Copyright (c) 2025 Nathan Rissot · curl this page:\n$ curl https://nrissot.github.io%s.txt\nexplore: $ curl https://nrissot.github.io/map.txt"
 
 func (p *Page) GenerateTXT() {
 	var txt string = txt_header + "\n"
