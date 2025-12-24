@@ -38,6 +38,9 @@ func ReadFrontMatter(data []byte) (*FrontMatter, error) {
 	if err != nil {
 		return nil, err
 	}
+	for i := range fmtr.Tags {
+		fmtr.Tags[i] = strings.ReplaceAll(strings.TrimSpace(fmtr.Tags[i]), " ", "-")
+	}
 	return &fmtr, nil
 }
 
@@ -92,6 +95,6 @@ func FindMarkdownFiles(path string) []MarkdownFile {
 
 func (md MarkdownFile) AsPage(target string) Page {
 	reg := regexp.MustCompile("[^a-zA-Z0-9]")
-	url := target + strings.ToLower(reg.ReplaceAllString(md.Frontmatter.Title, "")) + ".html"
-	return Page{md.Frontmatter.Title, url, md.Content, md.Frontmatter.Description, "", md.Frontmatter.Tags}
+	url := target + strings.ToLower(reg.ReplaceAllString(md.Frontmatter.Title, ""))
+	return CreatePage(md.Frontmatter.Title, url, md.Content, md.Frontmatter.Description, md.Frontmatter.Date, md.Frontmatter.Tags)
 }

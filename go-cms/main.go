@@ -2,13 +2,17 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 const SRC = "../articles"
+
 const DST = ".."
 
+// current year
+var YEAR = time.Now().Year()
+
 func main() {
-	// TODO : fix txt export
 	// TODO : sitemap.txt
 
 	// Find markdown blog articles
@@ -22,7 +26,7 @@ func main() {
 	}
 
 	// Create the main blog page
-	blog := CreateListPage("All Articles", "/blog.html", "# Tout les articles :", "")
+	blog := CreateListPage("BLOG", "/blog", "Tout les articles :", "Tout les articles")
 
 	// create the tags pages
 	var tags_pages map[string]*ListPage = map[string]*ListPage{}
@@ -32,7 +36,7 @@ func main() {
 		for _, t := range page.Tags {
 			lp, ok := tags_pages[t]
 			if !ok {
-				nlp := CreateListPage(t, "/tags/"+t+".html", "# Articles avec le tag ["+t+"] :", "")
+				nlp := CreateListPage(t, "/tags/"+t, "Articles avec le tag ["+t+"] :", "Articles avec le tag ["+t+"]")
 				tags_pages[t] = &nlp
 				lp = &nlp
 			}
@@ -42,6 +46,7 @@ func main() {
 		if err != nil {
 			panic(err)
 		}
+		fmt.Println(page.Title)
 		blog.AddPage(&page)
 	}
 
@@ -52,7 +57,7 @@ func main() {
 	}
 
 	// create the main tags page
-	tags := CreateListPage("All Tags", "/tags.html", "# Tout les Tags", "")
+	tags := CreateListPage("TAGS", "/tags", "Tout les Tags :", "Tout les Tags")
 
 	// write the tags pages to file, and add them to the main tags page.
 	for _, lp := range tags_pages {
@@ -61,7 +66,7 @@ func main() {
 		if nbarticles > 1 {
 			s = "s"
 		}
-		lp.Description = fmt.Sprintf("%d article%s.", nbarticles, s)
+		lp.Description += fmt.Sprintf(" - %d article%s.", nbarticles, s)
 		tags.AddPage(&lp.Page)
 		err = lp.WriteToFile()
 		if err != nil {
