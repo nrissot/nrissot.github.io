@@ -1,0 +1,21 @@
+Nathan Rissot                                    Github  Blog  Contact
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+# Carte du Site
+24/12/2025 ·
+
+.
+├─╴blog
+│  └─╴ecriresespropresoutils
+├─╴tags
+│  ├─╴tools
+│  ├─╴ux
+│  └─╴go
+├─╴index
+├─╴blog
+├─╴tags
+└─╴map
+
+Copyright (c) 2025 Nathan Rissot · curl this page:
+$ curl https://nrissot.github.io/map.txt
+explore: $ curl https://nrissot.github.io/map.txt

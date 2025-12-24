@@ -91,10 +91,12 @@ func main() {
 	for _, p := range tags.Articles {
 		tags_pages_names = append(tags_pages_names, strings.TrimPrefix(p.URL, "/tags/"))
 	}
-	sitemap := CreatePage("Carte du Site", "/map", DrawTree(root_pages_names, blog_pages_names, tags_pages_names), "", time.Now(), nil)
+	sitemap_content := DrawTree(root_pages_names, blog_pages_names, tags_pages_names)
+	sitemap := CreatePage("Carte du Site", "/map", sitemap_content, "", time.Now(), nil)
 	err = sitemap.WriteToFileTxtOnly()
-
 	if err != nil {
 		panic(err)
 	}
+
+	fmt.Println("Site generation successful !\n" + sitemap_content)
 }

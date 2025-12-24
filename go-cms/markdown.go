@@ -95,6 +95,6 @@ func FindMarkdownFiles(path string) []MarkdownFile {
 
 func (md MarkdownFile) AsPage(target string) Page {
 	reg := regexp.MustCompile("[^a-zA-Z0-9]")
-	url := target + strings.ToLower(reg.ReplaceAllString(md.Frontmatter.Title, ""))
+	url := target + strings.ToTitle(reg.ReplaceAllString(md.Frontmatter.Title, ""))
 	return CreatePage(md.Frontmatter.Title, url, md.Content, md.Frontmatter.Description, md.Frontmatter.Date, md.Frontmatter.Tags)
 }

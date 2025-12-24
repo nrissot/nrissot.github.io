@@ -1,7 +1,7 @@
 Nathan Rissot                                    Github  Blog  Contact
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-# Tout les articles :
+# Articles avec le tag [go] :
 
 -> Ecrire ses propres outils
 24/12/2025 · [ux] [go] [tools]
@@ -13,5 +13,5 @@ $ curl https://nrissot.github.io/blog/ecriresespropresoutils.txt
 
 
 Copyright (c) 2025 Nathan Rissot · curl this page:
-$ curl https://nrissot.github.io/blog.txt
+$ curl https://nrissot.github.io/tags/go.txt
 explore: $ curl https://nrissot.github.io/map.txt
