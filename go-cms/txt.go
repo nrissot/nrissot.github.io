@@ -2,9 +2,8 @@ package main
 
 import (
 	"fmt"
+	wordwrap "nrissot/cms/word-wrap"
 	"strings"
-
-	"github.com/mitchellh/go-wordwrap"
 )
 
 var txt_header string = "Nathan Rissot                                    Github  Blog  Contact\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"
@@ -20,11 +19,11 @@ func (p *Page) GenerateTXT() {
 	for _, t := range p.Tags {
 		txt_details += " [" + t + "]"
 	}
-	txt += wordwrap.WrapString(txt_details, 70)
+	txt += wordwrap.Wrap(txt_details, 70)
 	txt += "\n\n"
 
 	// TODO : in-house wordwrap
-	txt += wordwrap.WrapString(strings.TrimSpace(p.Content), 70)
+	txt += wordwrap.Wrap(strings.TrimSpace(p.Content), 70)
 
 	txt += "\n\n" + fmt.Sprintf(txt_footer, p.URL)
 	p.TXT = txt
