@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"regexp"
 	"strings"
 )
 
@@ -59,7 +60,7 @@ func (p *Page) GenerateHTML() {
 	// tags & date
 	html += fmt.Sprintf(details, p.Date.Format("2006-01-02"), p.Date.Format("02/01/2006"), generateTags(p.Tags))
 
-	html += ConvertToHTMLFragment(p.Content)
+	html += _normalize_quotes(_add_hashtag_to_titles(ConvertToHTMLFragment(p.Content)))
 
 	html += "</main>\n"
 
@@ -94,4 +95,17 @@ func (lp *ListPage) GenerateHTML() {
 	// CLOSURE
 	html += "</body></html>"
 	lp.HTML = html
+}
+
+func _add_hashtag_to_titles(s string) string {
+	h2reg := regexp.MustCompile(`(^|[^_])(<\bh2\b.*">)([^_]|$)`)
+	h3reg := regexp.MustCompile(`(^|[^_])(<\bh3\b.*">)([^_]|$)`)
+	h4reg := regexp.MustCompile(`(^|[^_])(<\bh4\b.*">)([^_]|$)`)
+	h5reg := regexp.MustCompile(`(^|[^_])(<\bh5\b.*">)([^_]|$)`)
+	h6reg := regexp.MustCompile(`(^|[^_])(<\bh6\b.*">)([^_]|$)`)
+	return h6reg.ReplaceAllString(h5reg.ReplaceAllString(h4reg.ReplaceAllString(h3reg.ReplaceAllString(h2reg.ReplaceAllString(s, "$1$2## $3"), "$1$2### $3"), "$1$2#### $3"), "$1$2##### $3"), "$1$2###### $3")
+}
+
+func _normalize_quotes(s string) string {
+	return strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(s, "’", "'"), "”", "\""), "“", "\"")
 }

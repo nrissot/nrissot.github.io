@@ -58,7 +58,6 @@ func (lp ListPage) WriteToFile() error {
 	if lp.HTML == "" {
 		// Sort articles in LWFS order (Last Written, First Shown)
 		slices.SortFunc(lp.Articles, func(a, b *Page) int { return b.Date.Compare(a.Date) })
-
 		lp.GenerateHTML()
 		lp.GenerateTXT()
 	}

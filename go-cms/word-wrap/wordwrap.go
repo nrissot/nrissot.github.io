@@ -10,17 +10,23 @@ import (
 func Wrap(s string, w int) string {
 	var out string = ""
 	var line_length = 0
-	for _, word := range strings.Split(s, " ") {
-		word_length := len([]rune(word))
-		if line_length == 0 {
-			out += word
-			line_length += word_length
-		} else if line_length+word_length+1 >= w {
-			out += "\n" + word
-			line_length = word_length
-		} else {
-			out += " " + word
-			line_length += word_length + 1
+	for _, words := range strings.Split(s, " ") {
+		for i, word := range strings.Split(words, "\n") {
+			if i != 0 {
+				out += "\n"
+				line_length = 0
+			}
+			word_length := len([]rune(word))
+			if line_length == 0 {
+				out += word
+				line_length += word_length
+			} else if line_length+word_length+1 >= w {
+				out += "\n" + word
+				line_length = word_length
+			} else {
+				out += " " + word
+				line_length += word_length + 1
+			}
 		}
 	}
 	return out

@@ -79,7 +79,7 @@ footer, .gray {
     }
 }
 
-i {
+i, em {
     font-family: "JetBrains mono italics";
     font-style: normal;
 }

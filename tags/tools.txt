@@ -9,7 +9,7 @@ Nathan Rissot                                    Github  Blog  Contact
 qu'écrire ses propres outils pour "résoudre" des problèmes du
 quotidien est l'un des moyen les plus formateurs de progresser.
 
-$ curl https://nrissot.github.io/blog/ecriresespropresoutils.txt
+$ curl https://nrissot.github.io/blog/ecrire_ses_propres_outils.txt
 
 
 Copyright (c) 2025 Nathan Rissot · curl this page:
