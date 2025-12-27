@@ -39,7 +39,7 @@ func (lp *ListPage) GenerateTXT() {
 		for _, t := range article.Tags {
 			txt_details += " [" + t + "]"
 		}
-		txt += "\n-> " + article.Title + "\n" + wordwrap.WrapString(txt_details, 70) + "\n" + wordwrap.WrapString(article.Description, 70) + "\n\n$ curl https://nrissot.github.io" + article.URL + ".txt\n\n"
+		txt += "\n-> " + article.Title + "\n" + wordwrap.Wrap(txt_details, 70) + "\n" + wordwrap.Wrap(article.Description, 70) + "\n\n$ curl https://nrissot.github.io" + article.URL + ".txt\n\n"
 	}
 
 	txt += "\n" + fmt.Sprintf(txt_footer, lp.URL)
