@@ -100,6 +100,24 @@ article {
     }
 }
 
+figure {
+    max-width: 70ch;
+    margin: 1em 1ch;
+
+    & img {
+        max-width: 68ch;
+    }
+
+    & figcaption {
+        color: var(--color-gray);
+        font-style: italic;
+
+        &::before {
+            content: "↳ ";
+        }
+    }
+}
+
 nav {
     display: inline;
 }

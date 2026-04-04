@@ -1,7 +1,7 @@
 Nathan Rissot                                    Github  Blog  Contact
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-# Tout les articles :
+# Articles avec le tag [tourbière] :
 
 -> Retour sur le projet MDiLL
 04/04/2026 · [uni] [python] [tourbière]
@@ -14,15 +14,6 @@ cette expérience.
 $ curl https://nrissot.github.io/blog/retour_sur_le_projet_mdill.txt
 
 
--> Ecrire ses propres outils
-24/12/2025 · [ux] [go] [tools]
-≈10min · En temps qu'étudiant en informatique, je suis d'avis
-qu'écrire ses propres outils pour "résoudre" des problèmes du
-quotidien est l'un des moyen les plus formateurs de progresser.
-
-$ curl https://nrissot.github.io/blog/ecrire_ses_propres_outils.txt
-
-
 Copyright (c) 2025 Nathan Rissot · curl this page:
-$ curl https://nrissot.github.io/blog.txt
+$ curl https://nrissot.github.io/tags/tourbière.txt
 explore: $ curl https://nrissot.github.io/map.txt

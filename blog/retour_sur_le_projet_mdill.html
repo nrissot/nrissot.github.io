@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Rissot [BLOG]</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" type="image/x-icon" href="/static/assets/images/favicon.ico">
+</head>
+<script src="/script.js"></script>
+<body>
+<header><h1><a href="/index.html">Nathan Rissot</a></h1>                                    <a href="https://github.com/nrissot">Github</a>  <nav><a href="/blog.html">Blog</a>  <a href="/index.html#contact">Contact</a></nav>
+<span aria-hidden="true" class="gray">::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</span></header>
+<main>
+<h1>Retour sur le projet MDiLL</h1>
+<span class="gray"><time datetime="2026-04-04">04/04/2026</time> · <a href="/tags/uni.html">[uni]</a> <a href="/tags/python.html">[python]</a> <a href="/tags/tourbière.html">[tourbière]</a></span><p>Cette année j'ai participé au <a
+href="https://www.univ-orleans.fr/fr/minerve/decouvrir/m-dill-multi-disciplinary-learning-lab">projet
+M-DiLL</a> avec une équipe du labo <a
+href="https://www.lpc2e.cnrs.fr/">LPC2E</a> sur le sujet <em>"Analyse de
+données de turbulence atmosphérique au-dessus de la tourbière de la
+Guette"</em>, Cet article est une présentation de ce que j'y ai appris
+et un rapide retour sur cette expérience.</p>
+<p><a href="https://github.com/nrissot/MDiLL-LPC2E-2025-2026-LGt">↳
+Dépôt Github du projet</a></p>
+<h1 id="i.-quest-ce-que-cest-mdill">I. Qu'est ce que c'est MDiLL ?</h1>
+<p>Le <a
+href="https://www.univ-orleans.fr/fr/minerve/decouvrir/m-dill-multi-disciplinary-learning-lab">M-DiLL</a>
+(<strong>M</strong>ulti-<strong>Di</strong>sciplinary
+<strong>L</strong>earning <strong>L</strong>ab) est un projet
+multidisciplinaire d'introductions à la recherche. Tout les étudiants
+des Masters 1 GPEx et des étudiants non minerves souhaitant participer
+sont répartis par groupe de deux et se voient assigner un projet de
+recherche au sein d'un laboratoire.</p>
+<p>J'ai été mis en binôme avec Khadja une étudiante Minerve du master <a
+href="https://www.univ-orleans.fr/fr/sciences-techniques/formation/Physique/Master/le-master-phyfa-mr-et-ssa">PhyFA</a>
+(<strong>Phy</strong>sique <strong>F</strong>ondamentale et
+<strong>A</strong>ppliquée) et nous avons reçu le projet "Analyse de
+données de turbulence atmosphérique au-dessus de la tourbière de la
+Guette" au sein de la partie "Environnement" du <a
+href="https://www.lpc2e.cnrs.fr/">LPC2E</a>
+(<strong>L</strong>aboratoire de <strong>P</strong>hysique et
+<strong>C</strong>himie de l'<strong>E</strong>nvironnement et de
+l'<strong>E</strong>space).</p>
+<h2 id="ii.-tourbière-de-la-guette">## II. Tourbière de la Guette</h2>
+<p>Une tourbière est ecosysteme fragile, composé de sphaigne
+(<em>Sphagnum</em>), une mousse qui a la propriétée d'acidifier son
+milieu, empechant ainsi sa propre décomposition et se transformant à la
+place en tourbe lorsqu'elle meurt.</p>
+<figure>
+<img
+src="/static/assets/images/LaGuette_Sphaigne_20260220_c_NathanRissot.jpg"
+alt="Photographie d'un tapis de sphaigne en train de pousser dans les zones piétinées entre les capteurs (les trajets répétés ont abaissé le niveau du sol pour le ramener au niveau de l'eau) — 20/02/2026 Nathan Rissot" />
+<figcaption aria-hidden="true">Photographie d'un tapis de sphaigne en
+train de pousser dans les zones piétinées entre les capteurs (les
+trajets répétés ont abaissé le niveau du sol pour le ramener au niveau
+de l'eau) — 20/02/2026 Nathan Rissot</figcaption>
+</figure>
+<p>Cette accumulation de tourbe à la particularité de pieger de grandes
+quantitées de carbone, on estime que les tourbières représentent
+environs 3% de la surface continentale de la Terre, mais elles
+representent pourtant 30% du carbone stocké dans les sols!</p>
+<p>Mais les tourbières sont des écosystèmes fragiles, elles sont très
+sensibles aux variation d'approvisionnement en eau: malgrès leur
+capacité d'agir comme une zone tampon en cas d'inondation, si les cours
+d'eaux qui les alimentents viennent à être détournés ou assechés cela
+peut avoir des effets dévastateurs.</p>
+<p>Si le niveau d'eau d'une tourbiere baisse, des plantes exogènes
+peuvent commencer à pousser sur la tourbe, et a dégrader celle ci,
+rejetant alors le carbone stocké dans l'atmosphère sous la forme de
+Méthane (CH₄).</p>
+<p>C'est le cas de la <a
+href="https://www.sno-tourbieres.cnrs.fr/site-de-la-guette/">tourbière
+de la Guette</a>, qui est envahie par la Molinie (<em>Molinia
+caerulea</em>) (herbes seches sur la photo, prise en février 2026) à
+cause d'un fossé creusé au bord de la route qui passe à coté de la
+tourbiere. Ce fossé draine le niveau d'eau de la tourbiere, et celle ci
+est en train de se faire recouvrir progressivement.</p>
+<figure>
+<img src="/static/assets/images/LaGuette_Carte.png"
+alt="Carte annotée des zones de la tourbiere de la Guette" />
+<figcaption aria-hidden="true">Carte annotée des zones de la tourbiere
+de la Guette</figcaption>
+</figure>
+<h2 id="iii.-quest-ce-quon-a-fait">## III. Qu'est ce qu'on a fait ?</h2>
+<p>Nous avons travaillé sur les mesures relevées par une tour a flux,
+une collection d'instruments composées notamment d'un anémomètre
+sonique, et de capteur de CO₂, H₂0 et CH₄.</p>
+<figure>
+<img
+src="/static/assets/images/LaGuette_TourFlux_20260220_c_NathanRissot.jpg"
+alt="Photographie de la tour a flux — 20/02/2026 Nathan Rissot" />
+<figcaption aria-hidden="true">Photographie de la tour a flux —
+20/02/2026 Nathan Rissot</figcaption>
+</figure>
+<p>Ces instruments permettent de calculer les flux de Gaz à Effets de
+Serre (GES) entre la surface de la tourbière et l'atmosphère.</p>
+<p>Nous avons été chargé d'étudier ce jeu de données ultra récents
+(dernières données que l'on a eu s'arretait en début février 2026, avec
+un rendu en mars 2026) et inexplorés avant nous.</p>
+<p>L'objet de l'étude est d'expliciter la manière dont les turbulences
+tourbillonantes (appelées <em>"eddy"</em> en anglais) transporte les GES
+vers l'atmosphère.</p>
+<p>Pour cela, l'anémométre sonique mesure la vitesse du vent en trois
+dimension, et les capteur de GES mesurent les trois gaz qui nous
+interessent. Toutes ces mesures sont effectuées à 20Hz (20 mesures par
+seconde).</p>
+<p>Ces mesures permettent de calculer les flux de GES, et l'analyse de
+ces flux nous permet de tirer des conclusions sur l'état de la
+tourbière.</p>
+<p>Notre processus de traitement et d'analyse se déroule donc comme
+suit: 1. Prétraitement des données brutes avec le logiciel <a
+href="https://www.licor.com/support/EddyPro/software.html">EddyPro</a>
+conçu par LI-COR, les fabriquants de nos capteurs, pour calculer les
+flux de GES par méthode d'Eddy Covariance. 2. Filtrage (aggressif) des
+données pour retirer toutes les données non-fiables, c'est a dire les
+données provenant de capteurs encrassés, de flux qui sont portés par des
+vents ne venant pas de la tourbière, flux dérangés (par des oiseaux
+volant a proximité par exemple) qui crées des pics qui ne sont pas
+statistiquement intéressant. 3. Plotting des données dans des formats
+utilisables pour faire des analyses. 4. Analyse</p>
+<p>Dans le cadre de ce projet, j'ai été responsable de l'élaboration du
+code Python permettant d'effectuer les étapes 2 et 3. (disponible sur le
+<a href="https://github.com/nrissot/MDiLL-LPC2E-2025-2026-LGt">repo du
+projet</a>)</p>
+<h2 id="iv.-rendus">## IV. Rendus</h2>
+<p>Dans le cadre de ce projet, nous avons produits plusieurs documents,
+notamment une infographie aillant pour objectif de vulgariser notre
+projet pour des étudiants non-scientifiques, et un rapport de fin de
+projet. Ces deux documents sont également disponibles sur le repo.</p>
+<p>J'ai préféré produire l'infographie, bien que celle ci soit arrivé
+très tôt dans le calendrier des rendus, elle nous a permis de bien
+cadrer le projet et de s'assurer que nous avions suffisament bien aquis
+les bases documentaires et contextuelles pour être capable de mener à
+bien le projet.</p>
+<h2 id="v.-réflections">## V. Réflections</h2>
+<p>J'ai trouvé ce projet particulièrement interessant, il m'a offert
+l'opportunitée de participer activement a une activité de recherche au
+sein d'un laboratoire. Bien que je me sente (et me sent toujours)
+evidemment dépassé sur le point de vue des connaissances en physiques,
+je pense que j'ai beaucoup appris sur le travail en collaboration avec
+des collègues extérieurs au domaine de l'informatique.</p>
+<p>L'opportunitée d'aller visiter le terrain, mettre les bottes dans
+l'eau de la Guette, d'assister à la collecte des données, du
+diagnostique et de l'entretien de la tour a flux, et de voir les efforts
+de restauration écologiques sur le terrains m'ont vraiment fait prendre
+conscience de la réalitée des recherches et des études.</p>
+<p>Tout ce projet à été une expérience précieuse, et bien que le travail
+que nous avons accomplis n'est guère plus qu'un petit grain de sable
+dans la pile des travaux de recherche, ça à été l'une de mes expérience
+préférées de cette année de Master 1.</p>
+<figure>
+<img
+src="/static/assets/images/LaGuette_Restauration_20260220_c_NathanRissot.jpg"
+alt="Photographie des expériences de restauration écologique à la tourbière de la Guette — 20/02/2026 Nathan Rissot" />
+<figcaption aria-hidden="true">Photographie des expériences de
+restauration écologique à la tourbière de la Guette — 20/02/2026 Nathan
+Rissot</figcaption>
+</figure>
+<p>Sources:</p>
+<ul>
+<li>Site du SNO Tourbières | page sur la tourbière de la Guette: <a
+href="https://www.sno-tourbieres.cnrs.fr/site-de-la-guette/">https://www.sno-tourbieres.cnrs.fr/site-de-la-guette/</a></li>
+<li>Site du LPC2E | page sur les tourbières à sphaignes (la Guette est
+la tourbières instrumentée étudiée dans le cadre de cet axe de
+recherche): <a
+href="https://www.lpc2e.cnrs.fr/theme-recherches/tourbiere">https://www.lpc2e.cnrs.fr/theme-recherches/tourbiere</a></li>
+</ul>
+</main>
+<footer>Copyright (c) 2026 Nathan Rissot · curl this page:
+$ curl <a href="https://nrissot.github.io/blog/retour_sur_le_projet_mdill.txt">https://nrissot.github.io/blog/retour_sur_le_projet_mdill.txt</a>
+sitemap: <a href="https://nrissot.github.io/map.txt">https://nrissot.github.io/map.txt</a></footer></body></html>
