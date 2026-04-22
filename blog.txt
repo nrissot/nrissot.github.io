@@ -3,6 +3,15 @@ Nathan Rissot                                    Github  Blog  Contact
 
 # Tout les articles :
 
+-> Weekend Projects: j'ai créé un desktop pet
+22/04/2026 · [go] [ebitengine] [trains] [weekend-project]
+≈3min · Après avoir vu un post sur internet à propos de Desktop
+Goose, j'ai eu envie de créer mon propre desktop pet, mais en forme
+de train!
+
+$ curl https://nrissot.github.io/blog/weekend_projects__j_ai_cree_un_desktop_pet.txt
+
+
 -> Retour sur le projet MDiLL
 04/04/2026 · [uni] [python] [tourbière]
 ≈5min · Cette année j'ai participé au projet M-DiLL avec une équipe

@@ -1,191 +1,192 @@
 @font-face {
-    font-family: "JetBrains mono";
-    src: url(/static/assets/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf);
+	font-family: "JetBrains mono";
+	src: url(/static/assets/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: "JetBrains mono italics";
-    src: url(/static/assets/fonts/JetBrains_Mono/JetBrainsMono-Italic-VariableFont_wght.ttf);
+	font-family: "JetBrains mono italics";
+	src: url(/static/assets/fonts/JetBrains_Mono/JetBrainsMono-Italic-VariableFont_wght.ttf);
 }
 
 :root {
-    --color-scheme: light dark;
+	--color-scheme: light dark;
 
-    color-scheme: var(--color-scheme);
+	color-scheme: var(--color-scheme);
 
-    --color-accent: light-dark(oklch(0.4735 0.111 156.51), oklch(0.8927 0.1761 101.19)) ;
-    --color-text  : light-dark(oklch(0 0 0), oklch(1 0 0));
-    --color-gray  : light-dark(oklch(.4 0 0), oklch(.7 0 0));
-    --color-bg    : light-dark(oklch(1 0 0), oklch(0 0 0));
+	--color-accent		: light-dark(oklch(58.193% 0.21144 31.559), oklch(0.8927 0.1761 101.19)) ;
+	--color-text		: light-dark(oklch(0 0 0), oklch(1 0 0));
+	--color-gray		: light-dark(oklch(.4 0 0), oklch(.7 0 0));
+	--color-bg			: light-dark(oklch(1 0 0), oklch(0 0 0));
 
-    background-color: var(--color-bg);
-    color: var(--color-text);
+	background-color: var(--color-bg);
+	color: var(--color-text);
 }
 
 body {
-    width: fit-content;
-    margin: auto;
-    font-family: "JetBrains mono";
-    font-variant-ligatures:common-ligatures;
+	width: fit-content;
+	margin: auto;
+	font-family: "JetBrains mono";
+	font-variant-ligatures:common-ligatures;
 
-    & h1, h2, h3, h4, h5, h6 {
-        font-size: 1em;
-    }
+	& h1, h2, h3, h4, h5, h6 {
+		font-size: 1em;
+	}
 }
 
 main {
-    max-width: 70ch;
+	max-width: 70ch;
 }
 
 pre {
-    font-family: "JetBrains mono";
-    font-variant-ligatures:common-ligatures;
-    font-weight: 400;
+	font-family: "JetBrains mono";
+	font-variant-ligatures:common-ligatures;
+	font-weight: 400;
 
-    & h1, h2, h3, h4, h5, h6, p, header, footer, li, ul {
-        display: inline;
-        font-size: 1em;
-        margin: 0;
-        padding: 0;
-    }
+	& h1, h2, h3, h4, h5, h6, p, header, footer, li, ul {
+		display: inline;
+		font-size: 1em;
+		margin: 0;
+		padding: 0;
+	}
 
-    & ul {
-        list-style: none;
-    }
+	& ul {
+		list-style: none;
+	}
 }
 
 h2 {
-    margin-top: 2em;
+	margin-top: 2em;
 }
 
 a {
-    color: var(--color-accent);
+	color: var(--color-accent);
+	text-decoration: underline 1.5px;
 }
 
 b, h1 {
-    font-weight: 900;
+	font-weight: 900;
 
-    & a {
-        text-decoration: none;
-    }
+	& a {
+		text-decoration: none;
+	}
 }
 
 footer, .gray {
-    color: var(--color-gray);
+	color: var(--color-gray);
 
-    & a {
-        text-decoration: none;
-        color: var(--color-gray);
-    }
+	& a {
+		text-decoration: none;
+		color: var(--color-gray);
+	}
 }
 
 i, em {
-    font-family: "JetBrains mono italics";
-    font-style: normal;
+	font-family: "JetBrains mono italics";
+	font-style: normal;
 }
 
 header, footer {
-    white-space: pre;
-    margin: 1em 0;
+	white-space: pre;
+	margin: 1em 0;
 
-    & h1, h2, h3, h4, h5, h6, p, li, ul {
-        display: inline;
-    }
+	& h1, h2, h3, h4, h5, h6, p, li, ul {
+		display: inline;
+	}
 }
 
 article {
-    margin-bottom: 2em;
-    & h3 {
-        margin-bottom: 0;
-    }
+	margin-bottom: 2em;
+	& h3 {
+		margin-bottom: 0;
+	}
 }
 
 figure {
-    max-width: 70ch;
-    margin: 1em 1ch;
+	max-width: 70ch;
+	margin: 1em 1ch;
 
-    & img {
-        max-width: 68ch;
-    }
+	& img {
+		max-width: 68ch;
+	}
 
-    & figcaption {
-        color: var(--color-gray);
-        font-style: italic;
+	& figcaption {
+		color: var(--color-gray);
+		font-style: italic;
 
-        &::before {
-            content: "↳ ";
-        }
-    }
+		&::before {
+			content: "↳ ";
+		}
+	}
 }
 
 nav {
-    display: inline;
+	display: inline;
 }
 
 .tag {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 /* snippet from https://webaim.org/techniques/css/invisiblecontent/ */
 .screen-reader-only {
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
 }
 
 .themeswitcher {
-    position: fixed;
-    right: 2em;
-    bottom: 0;
-    color: var(--color-gray);
+	position: fixed;
+	right: 2em;
+	bottom: 0;
+	color: var(--color-gray);
 }
 
 input[type="radio"].custom-radio {
-    display: none;
+	display: none;
 }
 
 input[type="radio"].custom-radio + label {
-    cursor: pointer;
+	cursor: pointer;
 
-    &::before {
-        content: "( ) ";
-    }
+	&::before {
+		content: "( ) ";
+	}
 }
 
 input[type="radio"].custom-radio:checked + label::before {
-    content: "(x) ";
+	content: "(x) ";
 }
 
 @media print{
-    :root {
-    --color-accent: #000;
-    --color-text  : #000;
-    --color-bg    : #fff;
-    }
+	:root {
+	--color-accent		: #000;
+	--color-text		: #000;
+	--color-bg			: #fff;
+	}
 }
 /* Mobile size */
 @media (max-width:1120px) {
-    .themeswitcher {
-        position: relative;
-        right: inherit;
-        bottom: inherit;
-    }
+	.themeswitcher {
+		position: relative;
+		right: inherit;
+		bottom: inherit;
+	}
 }
 @media (max-width:700px) {
-    :root {
-        font-size: .75em;
-    }
+	:root {
+		font-size: .75em;
+	}
 
-    body {
-        margin: auto
-    }
+	body {
+		margin: auto
+	}
 }
 
 @media (max-width:500px) {
-    :root {
-        font-size: .5em;
-    }
+	:root {
+		font-size: .5em;
+	}
 }

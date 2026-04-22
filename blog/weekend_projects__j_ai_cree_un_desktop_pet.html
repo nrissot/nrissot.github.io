@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Rissot [BLOG]</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" type="image/x-icon" href="/static/assets/images/favicon.ico">
+</head>
+<script src="/script.js"></script>
+<body>
+<header><h1><a href="/index.html">Nathan Rissot</a></h1>                                    <a href="https://github.com/nrissot">Github</a>  <nav><a href="/blog.html">Blog</a>  <a href="/index.html#contact">Contact</a></nav>
+<span aria-hidden="true" class="gray">::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</span></header>
+<main>
+<h1>Weekend Projects: j'ai créé un desktop pet</h1>
+<span class="gray"><time datetime="2026-04-22">22/04/2026</time> · <a href="/tags/go.html">[go]</a> <a href="/tags/ebitengine.html">[ebitengine]</a> <a href="/tags/trains.html">[trains]</a> <a href="/tags/weekend-project.html">[weekend-project]</a></span><p>Après avoir vu un post sur internet à propos de <a
+href="https://samperson.itch.io/desktop-goose">Desktop Goose</a> j'ai eu
+envie de créer mon propre desktop pet, mais en forme de train !</p>
+<p><a href="https://github.com/nrissot/desktop_train">↳ Repo Github du
+projet</a> <br> <a href="https://kaawan.itch.io/tiny-trains">↳ Page
+ITCH-IO des assets</a></p>
+<h2 id="cest-quoi-un-desktop-pet">## C'est quoi un desktop pet</h2>
+<p>Les desktop pet sont une variation des virtual pet, littéralement,
+des animaux de compagnie virtuels (tamagotchi), mais vivant sur le
+bureau de votre ordinateur.</p>
+<p>Selon <a
+href="https://en.wikipedia.org/wiki/Virtual_pet#Software-based">Wikipedia</a>
+le premier desktop pet était un programme appelé Neko, dans lequel un
+petit chat s'amuse a chasser votre curseur.</p>
+<h2 id="concept-du-projet">## Concept du projet</h2>
+<p>Plutôt que d'avoir un véritable animal de compagnie virtuel qui
+interagirait avec le curseur par exemple, je préférerait quelque de plus
+discret et oubliable, qui soit non-disruptif, et qui ne bloque pas de
+fonctionnalité des outils que j'utilise (VS Code)</p>
+<p>Il est donc impératif par exemple que les zones d'outils ne soit pas
+bloquées par le desktop pet.</p>
+<p>En regardant un tram passer en allant à la fac j'ai eu l'idée de
+faire un petit train, circulant en bas de l'écran de l'ordinateur.</p>
+<p>Avec le concept en place j'ai pu dresser le cahier des charges de ce
+projet:</p>
+<h3 id="cahier-des-charges">### Cahier des charges</h3>
+<ul>
+<li>ne doit pas bloquer les clics</li>
+<li>ne doit pas perturber les actions de l'utilisateur</li>
+<li>ne doit pas être trop distrayant (l'objectif c'est que je puisse le
+garder sur mon écran en travaillant après tout)</li>
+</ul>
+<h2 id="programmation">## Programmation</h2>
+<p>Pour programmer ce projet, j'ai décidé d'utiliser mon language
+préféré: Go (&lt;3), avec la librairie de développement de jeux <a
+href="https://ebitengine.org/">Ebitengine</a> (que j'avais déjà utilisé
+pour mon projet <a
+href="https://nrissot.github.io/misc/starmap">starmap</a> sur lequel
+j'écrirai peut être un article un jour).</p>
+<h3 id="setup-de-la-fenêtre">### Setup de la fenêtre</h3>
+<p>Après environ dix minutes de recherche dans la doc, j'ai fini par
+trouver toute les options qu'ils me fallait:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode go"><code class="sourceCode go"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>ebiten<span class="op">.</span>SetWindowMousePassthrough<span class="op">(</span><span class="ot">true</span><span class="op">)</span> <span class="co">// permet de cliquer à travers la fenêtre</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>ebiten<span class="op">.</span>SetWindowDecorated<span class="op">(</span><span class="ot">false</span><span class="op">)</span>       <span class="co">// retire les bordure de la fenêtre</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>ebiten<span class="op">.</span>SetWindowFloating<span class="op">(</span><span class="ot">true</span><span class="op">)</span>         <span class="co">// met toujours la fenetre au dessus des autres</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">// précise que la fenêtre est transparente par défaut.</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>ebiten<span class="op">.</span>RunGameWithOptions<span class="op">(&amp;</span>g<span class="op">,</span> <span class="op">&amp;</span>ebiten<span class="op">.</span>RunGameOptions<span class="op">{</span>ScreenTransparent<span class="op">:</span> <span class="ot">true</span><span class="op">})</span></span></code></pre></div>
+<p>Et voila, la partie "dure" est faite, la fenêtre est donc toujours
+affichée au dessus des autres, complètement transparente, et ne bloque
+pas les clics.</p>
+<p>Maintenant il ne reste plus qu'a afficher le petit train</p>
+<h3 id="logique">### Logique</h3>
+<p>Avec Ebitengine, notre application/jeu est construit autour de 2
+méthodes sur un struct représentant l'état de notre jeu:</p>
+<p><code>func (g *Game) Update() error { ... }</code> dans laquelle on
+effectue les mises a jour d'état, les calculs etc. Dans un jeu "normal"
+c'est dans cette méthode que l'on gérerait les inputs du joueurs, les
+calculs de physiques, etc etc. Ici, on se contente de soustraire 1 à la
+position X qui marque l'endroit a partir du quel dessiner le train, et
+de décider si le train est sorti de l'écran, et donc si on doit le
+remplacer par un nouveau train. C'est aussi dans cette fonction qu'on
+compte le nombre de trains pour l'écrire dans les statistiques.</p>
+<p><code>func (g *Game) Draw(screen *ebiten.Image) { ... }</code> dans
+laquelle on dessine ce qui doit apparaître sur la fenêtre. Pour des
+raisons d'efficacité, on redessine toute la fenêtre toute les frames
+(notre jeu tourne à 60 FPS, donc on dessine 60 fois par secondes). On
+redessine tout toutes les frames, car, dans la majorité des cas, c'est
+plus rapide de calculer les nouveaux pixels plutôt que de décider cas
+par cas si il faut modifier les existants. Pour ne pas bloquer
+visuellement des parties de l'écran, si la souris est autour de la ligne
+de chemin de fer, celle ci devient translucide pour qu'on puisse lire ce
+qu'il y'a en dessous.</p>
+<h3 id="assets">### Assets</h3>
+<p>J'ai ensuite dessiner plusieurs assets de train et de rails. J'ai
+utilise le programme <a
+href="https://libresprite.github.io/#!/">LibreSprite</a>, et la palette
+de couleurs <a
+href="https://lospec.com/palette-list/pico-8-secret-palette">PICO-8
+Secret Palette</a>. J'ai ensuite dessiné trois styles de trains avec des
+variantes de wagons et de locomotives, ainsi que des tags que je peut
+appliquer par dessus pour plus de variations:</p>
+<figure>
+<img src="/static/assets/images/train-example.png"
+alt="Exemple d'un train construit à partir des assets que j'ai dessiné" />
+<figcaption aria-hidden="true">Exemple d'un train construit à partir des
+assets que j'ai dessiné</figcaption>
+</figure>
+<p>Tout ces assets sont placé sur une seule image que l'on appelle la
+spritesheet (ou tilesheet) qui est ensuite découpée par le moteur de jeu
+en tuiles individuelles qui sont affiché par la méthode
+<code>Draw</code></p>
+<h2 id="conclusion">## Conclusion</h2>
+<p>Ce projet s'est déroulé sans problème, c'était un petit projet sur un
+weekend (weekend+ si on compte les deux trois finitions faite après), je
+me suis un peu plus familiarisé avec Ebitengine et j'ai refait du pixel
+art, ce que je n'avais pas fait depuis longtemps.</p>
+<p>Depuis j'ai mes petits trains qui défilent sur le bas de mon écran, y
+compris pendant que je suis en train d'écrire ces lignes</p>
+<figure>
+<img src="/static/assets/images/desktop-train-screenshot.png"
+alt="Capture d'écran d'un train passant sur mon bureau" />
+<figcaption aria-hidden="true">Capture d'écran d'un train passant sur
+mon bureau</figcaption>
+</figure>
+<h2 id="remarques">## Remarques:</h2>
+<p>Je n'ai pas encore (22/04/2026) inclut d'exécutable compilé pour le
+projet. Pour l'instant, si vous voulez avoir vos propres train, vous
+pouvez cloner le repo, et build l'exécutable a partir du code source
+(c'est pas si dur, je crois en vous, il suffit de suivre les
+instructions dans le <code>README.md</code>)</p>
+</main>
+<footer>Copyright (c) 2026 Nathan Rissot · curl this page:
+$ curl <a href="https://nrissot.github.io/blog/weekend_projects__j_ai_cree_un_desktop_pet.txt">https://nrissot.github.io/blog/weekend_projects__j_ai_cree_un_desktop_pet.txt</a>
+sitemap: <a href="https://nrissot.github.io/map.txt">https://nrissot.github.io/map.txt</a></footer></body></html>

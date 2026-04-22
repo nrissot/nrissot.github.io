@@ -2,13 +2,17 @@ Nathan Rissot                                    Github  Blog  Contact
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 # Carte du Site
-04/04/2026 ·
+22/04/2026 ·
 
 .
 ├─╴blog
+│  ├─╴weekend_projects__j_ai_cree_un_desktop_pet
 │  ├─╴retour_sur_le_projet_mdill
 │  └─╴ecrire_ses_propres_outils
 ├─╴tags
+│  ├─╴ebitengine
+│  ├─╴trains
+│  ├─╴weekend-project
 │  ├─╴uni
 │  ├─╴python
 │  ├─╴tourbière
