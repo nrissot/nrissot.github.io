@@ -21,6 +21,7 @@ type MarkdownFile struct {
 
 type FrontMatter struct {
 	Title       string    `yaml:"title"`
+	Url         string    `yaml:"url"`
 	Description string    `yaml:"desc"`
 	Date        time.Time `yaml:"date"`
 	Tags        []string  `yaml:"tags"`
@@ -97,6 +98,10 @@ func (md MarkdownFile) AsPage(target string) Page {
 	// TODO: make it better
 	reg1 := regexp.MustCompile("[éèë]")
 	reg2 := regexp.MustCompile("[^a-zA-Z0-9]")
-	url := target + strings.ToLower(reg2.ReplaceAllString(reg1.ReplaceAllString(md.Frontmatter.Title, "e"), "_"))
-	return CreatePage(md.Frontmatter.Title, url, md.Content, md.Frontmatter.Description, md.Frontmatter.Date, md.Frontmatter.Tags)
+	if md.Frontmatter.Url == "" {
+		md.Frontmatter.Url = target + strings.ToLower(reg2.ReplaceAllString(reg1.ReplaceAllString(md.Frontmatter.Title, "e"), "_"))
+	} else {
+		md.Frontmatter.Url = target + md.Frontmatter.Url
+	}
+	return CreatePage(md.Frontmatter.Title, md.Frontmatter.Url, md.Content, md.Frontmatter.Description, md.Frontmatter.Date, md.Frontmatter.Tags)
 }

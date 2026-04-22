@@ -10,6 +10,9 @@ créer mon propre desktop pet, mais en forme de train !
 
 [↳ Repo Github du projet](https://github.com/nrissot/desktop_train)
 <br>
+[↳ Dernière release des
+exécutables](https://github.com/nrissot/desktop_train/releases/latest)
+<br>
 [↳ Page ITCH-IO des assets](https://kaawan.itch.io/tiny-trains)
 
 ## C'est quoi un desktop pet
@@ -128,12 +131,12 @@ compris pendant que je suis en train d'écrire ces lignes
 bureau](/static/assets/images/desktop-train-screenshot.png)
 
 ## Remarques:
-Je n'ai pas encore (22/04/2026) inclut d’exécutable compilé pour le
-projet. Pour l'instant, si vous voulez avoir vos propres train, vous
-pouvez cloner le repo, et build l’exécutable a partir du code source
-(c'est pas si dur, je crois en vous, il suffit de suivre les
-instructions dans le `README.md`)
+Pour utiliser ce projet, vous pouvez soit 
+1. Compiler l'exécutable à partir du code source vous même en suivant
+les instructions
+2. Télécharger l'exécutable adapté à votre système dans [la dernière
+release](https://github.com/nrissot/desktop_train/releases/latest)
 
 Copyright (c) 2025 Nathan Rissot · curl this page:
-$ curl https://nrissot.github.io/blog/weekend_projects__j_ai_cree_un_desktop_pet.txt
+$ curl https://nrissot.github.io/blog/project_desktop_train.txt
 explore: $ curl https://nrissot.github.io/map.txt

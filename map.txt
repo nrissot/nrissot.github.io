@@ -6,16 +6,16 @@ Nathan Rissot                                    Github  Blog  Contact
 
 .
 ├─╴blog
-│  ├─╴weekend_projects__j_ai_cree_un_desktop_pet
+│  ├─╴project_desktop_train
 │  ├─╴retour_sur_le_projet_mdill
 │  └─╴ecrire_ses_propres_outils
 ├─╴tags
 │  ├─╴ebitengine
-│  ├─╴trains
 │  ├─╴weekend-project
-│  ├─╴uni
+│  ├─╴trains
 │  ├─╴python
 │  ├─╴tourbière
+│  ├─╴uni
 │  ├─╴ux
 │  ├─╴go
 │  └─╴tools

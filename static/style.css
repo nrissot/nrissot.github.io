@@ -17,6 +17,7 @@
 	--color-text		: light-dark(oklch(0 0 0), oklch(1 0 0));
 	--color-gray		: light-dark(oklch(.4 0 0), oklch(.7 0 0));
 	--color-bg			: light-dark(oklch(1 0 0), oklch(0 0 0));
+	--color-bg-gray		: light-dark(oklch(97.015% 0.00011 271.152), oklch(19.125% 0.00002 271.152));
 
 	background-color: var(--color-bg);
 	color: var(--color-text);
@@ -88,7 +89,8 @@ i, em {
 header, footer {
 	white-space: pre;
 	margin: 1em 0;
-
+	max-width: 70ch;
+	overflow-x: auto;
 	& h1, h2, h3, h4, h5, h6, p, li, ul {
 		display: inline;
 	}
@@ -158,6 +160,41 @@ input[type="radio"].custom-radio + label {
 
 input[type="radio"].custom-radio:checked + label::before {
 	content: "(x) ";
+}
+
+code {
+	background-color: var(--color-bg-gray);
+	font-size: 1rem;
+}
+
+div.sourceCode {
+	background-color: var(--color-bg-gray);
+	border-radius: 10px;
+	padding: 1em 2ch;
+	color: light-dark(oklch(47.519% 0.13835 140.8), oklch(75.977% 0.21713 141.763));
+	overflow-x: auto;
+	overflow-y: hidden;
+
+	& code {
+		font-size: .8rem;
+	}
+
+	& pre {
+		margin: 0;
+	}
+
+	& .co {
+		color: light-dark(oklch(45.506% 0.14348 32.185), oklch(66.51% 0.20458 26.943));
+		background-color: light-dark(oklch(66.51% 0.20458 26.943 / 0.102), oklch(66.51% 0.20458 26.943 / 0.102));
+	}
+
+	& .ot {
+		color: light-dark(oklch(36.399% 0.17113 268.135), oklch(75.291% 0.11345 224.136));
+	}
+
+	& .op {
+		color: light-dark(oklch(0 0 0), oklch(1 0 0))
+	}
 }
 
 @media print{

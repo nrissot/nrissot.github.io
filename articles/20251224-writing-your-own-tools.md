@@ -1,5 +1,6 @@
 ---
 title: Ecrire ses propres outils
+url: 
 desc: ≈10min · En temps qu'étudiant en informatique, je suis d'avis qu'écrire ses propres outils pour "résoudre" des problèmes du quotidien est l'un des moyen les plus formateurs de progresser.
 date: 2025-12-24
 tags:

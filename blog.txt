@@ -9,7 +9,7 @@ Nathan Rissot                                    Github  Blog  Contact
 Goose, j'ai eu envie de créer mon propre desktop pet, mais en forme
 de train!
 
-$ curl https://nrissot.github.io/blog/weekend_projects__j_ai_cree_un_desktop_pet.txt
+$ curl https://nrissot.github.io/blog/project_desktop_train.txt
 
 
 -> Retour sur le projet MDiLL

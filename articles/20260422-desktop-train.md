@@ -1,5 +1,6 @@
 ---
 title: "Weekend Projects: j'ai créé un desktop pet"
+url: project_desktop_train
 desc: ≈3min · Après avoir vu un post sur internet à propos de Desktop Goose, j'ai eu envie de créer mon propre desktop pet, mais en forme de train!
 date: 2026-04-22
 tags:
@@ -11,6 +12,7 @@ tags:
 Après avoir vu un post sur internet à propos de [Desktop Goose](https://samperson.itch.io/desktop-goose) j'ai eu envie de créer mon propre desktop pet, mais en forme de train !
 
 [↳ Repo Github du projet](https://github.com/nrissot/desktop_train) <br>
+[↳ Dernière release des exécutables](https://github.com/nrissot/desktop_train/releases/latest) <br>
 [↳ Page ITCH-IO des assets](https://kaawan.itch.io/tiny-trains)
 
 ## C'est quoi un desktop pet
@@ -74,4 +76,6 @@ Depuis j'ai mes petits trains qui défilent sur le bas de mon écran, y compris 
 ![Capture d'écran d'un train passant sur mon bureau](/static/assets/images/desktop-train-screenshot.png)
 
 ## Remarques:
-Je n'ai pas encore (22/04/2026) inclut d’exécutable compilé pour le projet. Pour l'instant, si vous voulez avoir vos propres train, vous pouvez cloner le repo, et build l’exécutable a partir du code source (c'est pas si dur, je crois en vous, il suffit de suivre les instructions dans le `README.md`)
+Pour utiliser ce projet, vous pouvez soit 
+1. Compiler l'exécutable à partir du code source vous même en suivant les instructions
+2. Télécharger l'exécutable adapté à votre système dans [la dernière release](https://github.com/nrissot/desktop_train/releases/latest)
