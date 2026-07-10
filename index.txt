@@ -17,8 +17,8 @@ AMHE, ou programmer en go.
   | Java              | HTML/CSS/JS | OCaml                    |
   +-------------------+-------------+--------------------------+
 
-Ce semestre je suis les cours de "Compilation", "Machine Learning", 
-& "Calculabilité et Complexité" dans le cadre du Master ARIAS.
+Ce semestre je suis les cours de "Compilation", "Machine Learning", et
+"Calculabilité et Complexité" dans le cadre du Master ARIAS.
 
 Avec le dispositif GPEx j'assiste également à des cours de sciences 
 qui ne sont pas des cours d'Informatique: "Geostatistique et 
@@ -26,7 +26,7 @@ Incertitude Spatiale" (cours en anglais) à l'OSUC et "Ethnographie de
 la Communication" en LLSH, Ainsi qu'au module Minerve "Scientific 
 Communication & Dissemination".
 
-Enfin, je participe au projet M-DiLL avec une équipe du labo LPC2E sur
+Enfin, j'ai participé au projet M-DiLL avec une équipe du labo LPC2E sur
 le sujet "Analyse de données de turbulence atmosphérique au-dessus de
 la tourbière de la Guette". Vous pouvez lire l'article que j'ai écrit 
 qui revient sur cette expérience sur mon blog.
