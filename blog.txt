@@ -3,6 +3,15 @@ Nathan Rissot                                    Github  Blog  Contact
 
 # Tout les articles :
 
+-> Weekend Projects: Troy-Ithaca trough line A
+07/09/2026 · [weekend-project] [analog-game] [ttrpg]
+≈xxmin · En me baladant sur la page des Games Jam d'Itch.io, je suis
+tombé sur la Solo September (Analog Games) jam, dont l'objectif est
+de concevoir un jeu physique, et j'ai décidé d'y participer.
+
+$ curl https://nrissot.github.io/blog/weekend_projects__troy_ithaca_trough_line_a.txt
+
+
 -> Weekend Projects: j'ai créé un desktop pet
 22/04/2026 · [go] [ebitengine] [trains] [weekend-project]
 ≈3min · Après avoir vu un post sur internet à propos de Desktop

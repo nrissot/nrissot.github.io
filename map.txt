@@ -2,23 +2,26 @@ Nathan Rissot                                    Github  Blog  Contact
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 # Carte du Site
-22/04/2026 ·
+07/09/2026 ·
 
 .
 ├─╴blog
+│  ├─╴weekend_projects__troy_ithaca_trough_line_a
 │  ├─╴project_desktop_train
 │  ├─╴retour_sur_le_projet_mdill
 │  └─╴ecrire_ses_propres_outils
 ├─╴tags
+│  ├─╴analog-game
+│  ├─╴ttrpg
 │  ├─╴ebitengine
-│  ├─╴weekend-project
 │  ├─╴trains
+│  ├─╴weekend-project
 │  ├─╴python
 │  ├─╴tourbière
 │  ├─╴uni
-│  ├─╴ux
 │  ├─╴go
-│  └─╴tools
+│  ├─╴tools
+│  └─╴ux
 ├─╴index
 ├─╴blog
 ├─╴tags

@@ -1,7 +1,7 @@
 Nathan Rissot                                    Github  Blog  Contact
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-# Articles avec le tag [weekend-project] :
+# Articles avec le tag [ttrpg] :
 
 -> Weekend Projects: Troy-Ithaca trough line A
 07/09/2026 · [weekend-project] [analog-game] [ttrpg]
@@ -12,15 +12,6 @@ de concevoir un jeu physique, et j'ai décidé d'y participer.
 $ curl https://nrissot.github.io/blog/weekend_projects__troy_ithaca_trough_line_a.txt
 
 
--> Weekend Projects: j'ai créé un desktop pet
-22/04/2026 · [go] [ebitengine] [trains] [weekend-project]
-≈3min · Après avoir vu un post sur internet à propos de Desktop
-Goose, j'ai eu envie de créer mon propre desktop pet, mais en forme
-de train!
-
-$ curl https://nrissot.github.io/blog/project_desktop_train.txt
-
-
 Copyright (c) 2025 Nathan Rissot · curl this page:
-$ curl https://nrissot.github.io/tags/weekend-project.txt
+$ curl https://nrissot.github.io/tags/ttrpg.txt
 explore: $ curl https://nrissot.github.io/map.txt

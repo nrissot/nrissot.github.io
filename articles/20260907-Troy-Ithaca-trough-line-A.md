@@ -1,0 +1,102 @@
+---
+title: "Weekend Projects: Troy-Ithaca trough line A"
+desc: ≈xxmin · En me baladant sur la page des Games Jam d'Itch.io, je suis tombé sur la Solo September (Analog Games) jam, dont l'objectif est de concevoir un jeu physique, et j'ai décidé d'y participer.
+date: 2026-09-07
+tags:
+  - weekend-project
+  - analog-game
+  - ttrpg
+---
+En me baladant sur [la page des Games Jam d'Itch.io](https://itch.io/jams) dimanche à 17h, je suis tombé sur la [Solo September (Analog Games)](https://itch.io/jam/solo-september-analog-games) game jam, dont l'objectif est de concevoir un jeu physique (sur papier, d'où le "Analog"), et j'ai décidé d'y participer.
+
+<iframe frameborder="0" src="https://itch.io/embed/4980996?border_width=0&amp;bg_color=fb772a&amp;fg_color=222222&amp;link_color=392c3d&amp;border_color=b9c1bf" width="550" height="165"><a href="https://kaawan.itch.io/troy-ithaca-through-line-a">Troy-Ithaca through Line A by Kaawan</a></iframe>
+
+## Solo Game ? késako ?
+Les solo-games sont une sorte d'hybride entre la pratique du Jeu de Rôle Papier et celle de l'écriture de fictions. Elle trouve son origine dans les [livres dont vous êtes le héros](https://fr.wikipedia.org/wiki/Un_livre_dont_vous_%C3%AAtes_le_h%C3%A9ros), crées dans les années 80, et ce sont depuis développé dans les sphères indés de l'écriture de jeux de rôles.
+
+Les Solo-TTRPG prenne souvent la forme d'une aventure dont le•a joueur•euse est à la fois le narrateur•rice et le protagoniste, souvent sous la forme de "prompts" d'écritures, généralement aléatoires, permettant au joueur d'êtres surpris du developpement de l'aventure bien qu'il en soit le MJ.
+
+Les solos games on aussi de très fort liens avec le courant des "One-Page TTRPG", des jeux minimalistes et créatifs, tenant sur une seule page imprimée, et celui des [Zines](https://fr.wikipedia.org/wiki/Fanzine) issue de la culture punk, littéralement des magazines indépendants permettant une expression artistique très libéré de la part de son auteur.
+
+J'ai souvent flotté proche de ses sphères, mais sans vraiment passer le pas, et cette jam est l'occasion de se jeter dans le grand bains :)
+
+## Qu'est ce qu'on fait du coup
+Une amie qui a vu l'Odyssée de Christopher Nolan recemment s'amuse, dans nos groupes de discussions à nous parler de son retour à Ithaque (son appart), pour retrouver sa femme (sa bouilloire).
+
+J'ai utilisé cette inspiration pour en faire un jeu dont l'objectif est de faire attention à ce qui nous entoure dans le monde réel, en imaginant des histoires merveilleuses a partir de choses ininteressantes habituellement (cette voiture avec un phare cassé serait-elle un Cyclope prêt a nous dévorer, et cette femme au grand manteau rouge serait elle la fameuse enchanteresse Circé !?).
+
+Le jeu, que j'ai nommé "Troy-Ithaca through line A" (*Troie-Ithaque via la ligne A*) un clin d'oeuil sur le fait que ce jeu se joue dans les transports en commun, vous donne une liste de 21 evenements, personnages, et entitées de l'Odyssée, que le•a joueur•euse devra reconnaitre, et décrire/prendre en photo/dessiner.
+
+## Conception
+Le texte du jeu à été écrit avec [Obsidian](https://obsidian.md/) (que j'utilise également pour écrire ces lignes.) J'ai écrit en anglais pour travailler cette compétence, et toucher un plus grand public. 
+
+Pour concevoir le typesetting du jeu, j'ai utilisé [Typst](https://typst.app/), avec le template [zen-zine](https://typst.app/universe/package/zen-zine/) de [Tom Eichlersmith](https://github.com/tomeichlersmith).
+
+Les images ont été conçue avec [Gimp](https://www.gimp.org/downloads/). J'ai essayé de m'inspirer des esthétiques Grunges et Alternatives, en faisant un usage copieux des outils threshold et des divers bruits.
+
+Le contenu est volontairement minimaliste, afin qu'il puisse tenir sur une seule page A4, formattée au format d'un zine de 8 pages (en comptant les couvertures.)
+
+Le jeu est telechargeable sur la [page itch du projet](https://kaawan.itch.io/troy-ithaca-through-line-a), en format pdf (zine d'une page, ou grand format avec illustration, imprimer en A4, sans marges, et en gris) et markdown. Alternativement, le texte est également disponible si dessous.
+
+## Conclusions
+J'ai concu le jeu en partant de 0 à 17h et avec un jeu fini et imprimé à 22h, et j'ai passé un super moment. Je comprend mieux l'attrait qu'on ces jeux plus ésotériques pour leurs créateurs, qu'ont ait des joueurs ou juste pour nous, comme objet d'expression plus que comme un "vrai" jeu.
+
+Je ne pense pas que beaucoup de gens fasse de partie de ce jeu, mais c'est pas grave, l'acte de création à pour moi été la partie la plus fun de ce projet.
+
+J'ai aussi pu retravailler mes aptitudes de design graphiques, chose que je n'ai pas retravaillée depuis longtemps.
+
+si vous y jouez, n'hésitez pas a laisser un commentaire sur la page itch, ou à m'envoyer un mail si vous êtes timide :)
+
+![photo du zine imprimé](/static/assets/images/troyithaca_promo_resized_3.jpg)
+
+<hr>
+
+# Troy-Ithaca through Line A
+*A solo game for adventure(s) on public transports*
+
+## Introduction
+Troy-Ithaca through Line A is solo "people watching"/journaling game meant to be played while commuting home on public transports.
+
+During each Odyssey (commute) from your Troy (your workplace/university/grocery store/cafe date) to your Ithaca (home), you will play the role of an Aede, a poet, trying to recall an Epic tale you are reciting.
+
+You will be given prompts, inspired by the famous poem, and your task is to write/take picture/describe... something you see that reminds you of the prompt, for example, a car with a broken light might be a ferocious cyclops, or that old women reading a little green book might actually be the famous Circe.
+
+## Generating Numbers
+If you usually carry pocket dices, please use them aboard the moving bus, but if you want something a bit more practical (albeit, a lot less whimsical) just let your eye wander until they land on a number, ideally between 0-99 (or you can just chop-off the end) example of things you can find numbers on include car's license plates, the time on your neighbor's watch, the number of seconds left on your music, the number of people in your tram car etc...
+
+## Prompt list
+1. (0,4) Longing for your wife
+2. (5,8) Agamemnon, King of the Acheans
+3. (9,13) Deceitful Trojan Horse
+4. (14,18) Sturdy Ships on the coast of Troy
+5. (19,23) Apathy of the Lotus-Eaters
+6. (24,28) Polyphemus the Cyclops
+7. (29,33) The Cave, Inhospitable prison
+8. (34,38) The Sheeps, instrument of escapism
+9. (39,43) The Winds of Aeolus
+10. (44,47) Ships Destroyed by the Laestrygonians
+11. (48,52) Charming Circe
+12. (53,57) Men are Pigs in Disguises
+13. (58,61) The Ghost of Tiresias the Wise
+14. (62,66) Penelopes Loom
+15. (67,71) Irresistible Sirens
+16. (72,76) Charybdis & Scylla
+17. (77,80) The Cattle of Helios
+18. (81,85) Calypso on her Island
+19. (86,89) Your Loyal Old Dog
+20. (90,94) The Bow, The Axes and the Marital Bed
+21. (95,99) Disgraced Suitors
+
+## What do i do with that prompt
+First you need to daydream a bit, imagine the story of the thing you spotted, let your mind wander a bit, imagine their name, their heroic feats, their greatest loss, the fault in their pristine armor of glory, then log that encounter in the method you see fit. you can find a table of suggested "journaling" methods, feel free to choose one or multiple of them (or do it your way!):
+
+1. Take a picture
+2. Jot down a quick dialog
+3. Write a short description
+4. Text a friend about it
+5. Draw a quick sketch
+6. Write three adjectives
+
+> *Note: Please dont take pictures of people without their consent, that's a really shitty thing to do, 1. is for objects and things only*
+
+As an additionnal rule, you may generate a (or multiple) number(s) 1-6 before departing your Troy (last digit of the time, or number of minutes your song last ?) and use it to choose your journaling(s) method(s)
