@@ -1,6 +1,6 @@
 ---
 title: "Weekend Projects: Troy-Ithaca trough line A"
-desc: ≈xxmin · En me baladant sur la page des Games Jam d'Itch.io, je suis tombé sur la Solo September (Analog Games) jam, dont l'objectif est de concevoir un jeu physique, et j'ai décidé d'y participer.
+desc: ≈5min · En me baladant sur la page des Games Jam d'Itch.io, je suis tombé sur la Solo September (Analog Games) jam, dont l'objectif est de concevoir un jeu physique, et j'ai décidé d'y participer.
 date: 2026-09-07
 tags:
   - weekend-project

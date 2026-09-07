@@ -24,6 +24,13 @@ Articles avec le tag [ebitengine] - 1 article.
 $ curl https://nrissot.github.io/tags/ebitengine.txt
 
 
+-> weekend-project
+07/09/2026 ·
+Articles avec le tag [weekend-project] - 2 articles.
+
+$ curl https://nrissot.github.io/tags/weekend-project.txt
+
+
 -> trains
 07/09/2026 ·
 Articles avec le tag [trains] - 1 article.
@@ -31,11 +38,11 @@ Articles avec le tag [trains] - 1 article.
 $ curl https://nrissot.github.io/tags/trains.txt
 
 
--> weekend-project
+-> uni
 07/09/2026 ·
-Articles avec le tag [weekend-project] - 2 articles.
+Articles avec le tag [uni] - 1 article.
 
-$ curl https://nrissot.github.io/tags/weekend-project.txt
+$ curl https://nrissot.github.io/tags/uni.txt
 
 
 -> python
@@ -50,13 +57,6 @@ $ curl https://nrissot.github.io/tags/python.txt
 Articles avec le tag [tourbière] - 1 article.
 
 $ curl https://nrissot.github.io/tags/tourbière.txt
-
-
--> uni
-07/09/2026 ·
-Articles avec le tag [uni] - 1 article.
-
-$ curl https://nrissot.github.io/tags/uni.txt
 
 
 -> go
