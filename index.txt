@@ -2,9 +2,10 @@ Nathan Rissot                                    Github  Blog  Contact
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
 
 Bonjour! Je suis Nathan Rissot, un étudiant de M1 dans le parcours 
-Informatique GPEx à l'Université d'Orléans. Je suis passionné par la 
-recherche académique, notamment dans le domaine des graphes, de la
-parallèlisation ou de la compilation.
+Informatique GPEx à l'Université d'Orléans. Dans ce cadre, je 
+travaille au sein de l'équipe PAMDA du LIFO sur la définition et 
+l'implémentations de primitives d'explorations sur une base de donnée 
+graphe: Les Offshore Leaks.
 
 Dans mon temps libre, j'aime jouer à D&D avec mes amis, pratiquer les
 AMHE, ou programmer en go.
@@ -17,19 +18,23 @@ AMHE, ou programmer en go.
   | Java              | HTML/CSS/JS | OCaml                    |
   +-------------------+-------------+--------------------------+
 
-Ce semestre je suis les cours de "Compilation", "Machine Learning", et
-"Calculabilité et Complexité" dans le cadre du Master ARIAS.
+Ce semestre je suis les cours de "Concepts Avancés des Langages de 
+Programmation" et de "Programmation Quantique" dans le cadre du Master
+ARIAS.
 
-Avec le dispositif GPEx j'assiste également à des cours de sciences 
-qui ne sont pas des cours d'Informatique: "Geostatistique et 
-Incertitude Spatiale" (cours en anglais) à l'OSUC et "Ethnographie de
-la Communication" en LLSH, Ainsi qu'au module Minerve "Scientific 
-Communication & Dissemination".
+Avec le dispositif GPEx j'assiste également à des cours de qui ne sont
+pas des cours d'Informatique: "Ressources et société (BRGM)" à l'OSUC
+(Master STPE: Géologie & Environnement) et "Morphologie et Syntaxe" 
+en LLSH (Master Sciences du Language).
 
-Enfin, j'ai participé au projet M-DiLL avec une équipe du labo LPC2E sur
-le sujet "Analyse de données de turbulence atmosphérique au-dessus de
-la tourbière de la Guette". Vous pouvez lire l'article que j'ai écrit 
-qui revient sur cette expérience sur mon blog.
+Je suis également trésorier de l'AEMO, l'associations des Etudiants 
+Minerve d'Orléans, qui a pour but d'assister les étudiant·e·s de notre
+cursus et de promouvoir la diffusion scientifique et la recherche.
+
+Enfin, j'exerce le rôle de Tuteur Pédagogique d'Informatique auprés du
+groupe TD2 des L1 Math-Info OUI-SI, et j'encadre donc une séance de 
+soutien pour les matières "Programmation & Algorithmique", "Logique & 
+Démonstration" et "Architecture des Ordinateurs".
 
 ----------------------------------------------------------------------
 Vous pouvez me contacter via:
