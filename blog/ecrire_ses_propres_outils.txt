@@ -331,6 +331,6 @@ L'an prochain, j'aimerais m'améliorer dans ma documentation, et dans
 la systématisation de la mise en place et de l'utilisation d'un repo
 git pour mes projets solo.
 
-Copyright (c) 2025 Nathan Rissot · curl this page:
-$ curl https://nrissot.github.io/blog/ecrire_ses_propres_outils.txt
+Copyright (c) %!d(string=/blog/ecrire_ses_propres_outils) Nathan Rissot · curl this page:
+$ curl https://nrissot.github.io%!s(MISSING).txt
 explore: $ curl https://nrissot.github.io/map.txt

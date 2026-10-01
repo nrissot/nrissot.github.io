@@ -12,6 +12,6 @@ de train!
 $ curl https://nrissot.github.io/blog/project_desktop_train.txt
 
 
-Copyright (c) 2025 Nathan Rissot · curl this page:
+Copyright (c) 2026 Nathan Rissot · curl this page:
 $ curl https://nrissot.github.io/tags/ebitengine.txt
 explore: $ curl https://nrissot.github.io/map.txt

@@ -172,6 +172,6 @@ la tourbières instrumentée étudiée dans le cadre de cet axe de
 recherche):
 [https://www.lpc2e.cnrs.fr/theme-recherches/tourbiere](https://www.lpc2e.cnrs.fr/theme-recherches/tourbiere)
 
-Copyright (c) 2025 Nathan Rissot · curl this page:
-$ curl https://nrissot.github.io/blog/retour_sur_le_projet_mdill.txt
+Copyright (c) %!d(string=/blog/retour_sur_le_projet_mdill) Nathan Rissot · curl this page:
+$ curl https://nrissot.github.io%!s(MISSING).txt
 explore: $ curl https://nrissot.github.io/map.txt

@@ -12,6 +12,6 @@ de concevoir un jeu physique, et j'ai décidé d'y participer.
 $ curl https://nrissot.github.io/blog/weekend_projects__troy_ithaca_trough_line_a.txt
 
 
-Copyright (c) 2025 Nathan Rissot · curl this page:
+Copyright (c) 2026 Nathan Rissot · curl this page:
 $ curl https://nrissot.github.io/tags/ttrpg.txt
 explore: $ curl https://nrissot.github.io/map.txt

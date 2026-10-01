@@ -182,6 +182,6 @@ As an additionnal rule, you may generate a (or multiple) number(s)
 minutes your song last ?) and use it to choose your journaling(s)
 method(s)
 
-Copyright (c) 2025 Nathan Rissot · curl this page:
-$ curl https://nrissot.github.io/blog/weekend_projects__troy_ithaca_trough_line_a.txt
+Copyright (c) %!d(string=/blog/weekend_projects__troy_ithaca_trough_line_a) Nathan Rissot · curl this page:
+$ curl https://nrissot.github.io%!s(MISSING).txt
 explore: $ curl https://nrissot.github.io/map.txt

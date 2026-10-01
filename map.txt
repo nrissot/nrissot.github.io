@@ -2,7 +2,7 @@ Nathan Rissot                                    Github  Blog  Contact
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 # Carte du Site
-07/09/2026 ·
+01/10/2026 ·
 
 .
 ├─╴blog
@@ -11,22 +11,21 @@ Nathan Rissot                                    Github  Blog  Contact
 │  ├─╴retour_sur_le_projet_mdill
 │  └─╴ecrire_ses_propres_outils
 ├─╴tags
-│  ├─╴analog-game
 │  ├─╴ttrpg
-│  ├─╴ebitengine
+│  ├─╴analog-game
 │  ├─╴weekend-project
+│  ├─╴ebitengine
 │  ├─╴trains
 │  ├─╴uni
 │  ├─╴python
 │  ├─╴tourbière
+│  ├─╴ux
 │  ├─╴go
-│  ├─╴tools
-│  └─╴ux
+│  └─╴tools
 ├─╴index
 ├─╴blog
-├─╴tags
 └─╴map
 
-Copyright (c) 2025 Nathan Rissot · curl this page:
-$ curl https://nrissot.github.io/map.txt
+Copyright (c) %!d(string=/map) Nathan Rissot · curl this page:
+$ curl https://nrissot.github.io%!s(MISSING).txt
 explore: $ curl https://nrissot.github.io/map.txt

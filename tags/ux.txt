@@ -12,6 +12,6 @@ quotidien est l'un des moyen les plus formateurs de progresser.
 $ curl https://nrissot.github.io/blog/ecrire_ses_propres_outils.txt
 
 
-Copyright (c) 2025 Nathan Rissot · curl this page:
+Copyright (c) 2026 Nathan Rissot · curl this page:
 $ curl https://nrissot.github.io/tags/ux.txt
 explore: $ curl https://nrissot.github.io/map.txt

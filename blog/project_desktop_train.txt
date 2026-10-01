@@ -137,6 +137,6 @@ les instructions
 2. Télécharger l'exécutable adapté à votre système dans [la dernière
 release](https://github.com/nrissot/desktop_train/releases/latest)
 
-Copyright (c) 2025 Nathan Rissot · curl this page:
-$ curl https://nrissot.github.io/blog/project_desktop_train.txt
+Copyright (c) %!d(string=/blog/project_desktop_train) Nathan Rissot · curl this page:
+$ curl https://nrissot.github.io%!s(MISSING).txt
 explore: $ curl https://nrissot.github.io/map.txt
