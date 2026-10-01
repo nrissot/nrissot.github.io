@@ -8,7 +8,7 @@ import (
 
 var txt_header string = "Nathan Rissot                                    Github  Blog  Contact\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"
 
-var txt_footer string = "Copyright (c) 2025 Nathan Rissot · curl this page:\n$ curl https://nrissot.github.io%s.txt\nexplore: $ curl https://nrissot.github.io/map.txt"
+var txt_footer string = "Copyright (c) %d Nathan Rissot · curl this page:\n$ curl https://nrissot.github.io%s.txt\nexplore: $ curl https://nrissot.github.io/map.txt"
 
 func (p *Page) GenerateTXT() {
 	var txt string = txt_header + "\n"
@@ -42,7 +42,7 @@ func (lp *ListPage) GenerateTXT() {
 		txt += "\n-> " + article.Title + "\n" + wordwrap.Wrap(txt_details, 70) + "\n" + wordwrap.Wrap(article.Description, 70) + "\n\n$ curl https://nrissot.github.io" + article.URL + ".txt\n\n"
 	}
 
-	txt += "\n" + fmt.Sprintf(txt_footer, lp.URL)
+	txt += "\n" + fmt.Sprintf(txt_footer, YEAR, lp.URL)
 
 	lp.TXT = txt
 }

@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"os"
+	"regexp"
 	"strings"
 	"time"
 )
@@ -13,9 +15,20 @@ const DST = ".."
 // current year
 var YEAR = time.Now().Year()
 
-func main() {
-	// TODO : sitemap.txt
+// update the copyrights for the static pages (index, 404)
+func update_copyright(files []string) {
+	for _, filename := range files {
+		content, err := os.ReadFile(filename)
+		if err != nil {
+			panic(err)
+		}
+		re := regexp.MustCompile(`Copyright \(c\) [0-9]{4} Nathan Rissot`)
+		updated_content := re.ReplaceAll(content, fmt.Appendf(nil, "Copyright (c) %d Nathan Rissot", YEAR))
+		os.WriteFile(filename, updated_content, 0666)
+	}
+}
 
+func main() {
 	// Find markdown blog articles
 	files := FindMarkdownFiles(SRC)
 
@@ -82,7 +95,7 @@ func main() {
 	}
 
 	// write the sitemap.txt to a file
-	root_pages_names := []string{"index", "blog", "tags", "map"}
+	root_pages_names := []string{"index", "blog", "map"}
 	blog_pages_names := []string{}
 	for _, p := range blog.Articles {
 		blog_pages_names = append(blog_pages_names, strings.TrimPrefix(p.URL, "/blog/"))
@@ -97,6 +110,8 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+
+	update_copyright([]string{"../index.html", "../index.txt", "404.html", "404.txt"})
 
 	fmt.Println("Site generation successful !\n" + sitemap_content)
 }

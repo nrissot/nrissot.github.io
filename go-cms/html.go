@@ -54,11 +54,12 @@ func (p *Page) GenerateHTML() {
 
 	// MAIN
 	html += "\n<main>\n"
-
 	html += "<h1>" + p.Title + "</h1>\n"
 
 	// tags & date
-	html += fmt.Sprintf(details, p.Date.Format("2006-01-02"), p.Date.Format("02/01/2006"), generateTags(p.Tags))
+	if len(p.Tags) > 0 {
+		html += fmt.Sprintf(details, p.Date.Format("2006-01-02"), p.Date.Format("02/01/2006"), generateTags(p.Tags))
+	}
 
 	html += _normalize_quotes(_add_hashtag_to_titles(ConvertToHTMLFragment(p.Content)))
 
